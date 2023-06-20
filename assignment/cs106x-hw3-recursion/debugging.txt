@@ -1,0 +1,4 @@
+TODO: As part of this assignment we ask that you document one bug you encounter and how you solved it, so we highly recommend reading handout 6 if you have not already to provide a sense of how to approach debugging.  Please document this bug below.
+
+-----
+
