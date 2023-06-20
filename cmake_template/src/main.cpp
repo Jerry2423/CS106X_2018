@@ -1,5 +1,5 @@
 #include <iostream>
-#include "io/console.h"
+#include "console.h"
 using std::cout;
 using std::endl;
 

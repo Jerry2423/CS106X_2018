@@ -26,6 +26,8 @@
 
 `cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..`
 
+Note: clangd searches for file in the directory that is added into the `include_directories()`
+
 2. Clangd c++ version setting: [Link](https://neovim.discourse.group/t/how-to-setup-clangd-for-c-20/1744)
 
 `cd ~` then `touch .clangd`, finally in the `.clangd` add: 

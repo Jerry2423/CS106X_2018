@@ -3,7 +3,13 @@ set(CMAKE_CXX_STANDARD 17)
 SET (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ldl -lpthread")
 project(app)
 
-include_directories(lib/)
+include_directories(lib/
+    lib/graphics/
+    lib/util/
+    lib/collections/
+    lib/system/
+    lib/private/
+    lib/io/)
 file(GLOB stanford_files
         "lib/graphics/*.h"
         "lib/graphics/*.cpp"
