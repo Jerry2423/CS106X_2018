@@ -41,6 +41,19 @@ CompileFlags:
 
 
 
+### Multiple Files Assignment Handling
+
+In some assignment, there will be multiple files in `src` directory, all of them can be added into a single executable file as it source code. To do this: add the following in `CMakeLists.txt`
+
+```cmake
+file(GLOB app_SOURCES "src/*.cpp" "src/*.h")
+add_executable(app app_SOURCES)
+```
+
+
+
+
+
 ### Add More Libraries for Future Assignment
 
 There is an example commented in the `CMakeLists.txt`
