@@ -51,7 +51,7 @@ bool humanWordSearchHelper(Grid<char>& board, const string& word, string& curr_w
             if (i == 0 && j == 0) {
                 continue;
             }
-            if (board.inBounds(row+i, col+j) && board[row+i][col+j] != '.' && word[curr_word.size()] == board[row+i][col+j]) {
+            if (board.inBounds(row+i, col+j) && board[row+i][col+j] != '.' && word[curr_word.size()] == board[row+i][col+j]) { // the last condition: pruning
                 curr_word += board[row+i][col+j];
                 board[row+i][col+j] = '.';
                 //TODO graphics
@@ -129,7 +129,7 @@ bool humanWordSearch(const Grid<char>& board, const Lexicon& dictionary, const s
     string curr_word;
     for (int i = 0; i < board.numRows(); i++) {
         for (int j = 0; j < board.numCols(); j++) {
-            if (board_copy[i][j] == word[0]) {
+            if (board_copy[i][j] == word[0]) { // pruning
                 curr_word += board_copy[i][j];
                 board_copy[i][j] = '.';
                 BoggleGUI::setHighlighted(i, j, true);
