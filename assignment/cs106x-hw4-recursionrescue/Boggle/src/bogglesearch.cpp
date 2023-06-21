@@ -22,11 +22,13 @@ Grid<char> generateRandomBoard(int size, const Vector<std::string>& letterCubes)
     Grid<char> todo(size, size);// this is only here so it will compile
     Vector<string> letter_cube_copy = letterCubes;
     shuffle(letter_cube_copy);
+    for (auto& i : letter_cube_copy) {
+        i = shuffle(i); //the function for string shuffle is not a inplace function!
+    }
     
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             auto letters = letter_cube_copy.removeBack();
-            shuffle(letters);
             todo[i][j] = letters[0];
         }
     }
