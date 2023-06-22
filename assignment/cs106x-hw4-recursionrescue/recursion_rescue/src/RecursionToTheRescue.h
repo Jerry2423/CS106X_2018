@@ -3,9 +3,9 @@
 
 #include <string>
 #include <ostream>
-#include "collections/vector.h"
-#include "collections/set.h"
-#include "collections/map.h"
+#include "vector.h"
+#include "set.h"
+#include "map.h"
 
 
 /* * * * * Doctors Without Orders * * * * */

@@ -1,10 +1,10 @@
 #ifndef Disasters_Included
 #define Disasters_Included
 
-#include "collections/map.h"
-#include "collections/vector.h"
-#include "collections/set.h"
-#include "graphics/gtypes.h"
+#include "map.h"
+#include "vector.h"
+#include "set.h"
+#include "gtypes.h"
 #include <string>
 #include <istream>
 

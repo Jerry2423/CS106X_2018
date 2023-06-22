@@ -29,6 +29,7 @@ add_library(stanford ${stanford_files})
 #add multiple files to the executable target
 #group files in src together, when add_executable(), even without #include or definition in bogglegui.cpp, bollgegui.cpp can still find definition for the function defined in bogglesearch.cpp!
 # file(GLOB app_SOURCES "src/*.cpp" "src/*.h")
+# link_libraries(stanford)
 
 # add single file
 set(app_SOURCES src/main.cpp)

@@ -1,7 +1,7 @@
-#include "util/strlib.h"
+#include "strlib.h"
 #include <string>
 #include <fstream>
-#include "collections/vector.h"
+#include "vector.h"
 #include "Elections.h"
 using namespace std;
 
@@ -93,7 +93,7 @@ namespace {
  * @throws ErrorException If an error occurs or the year is invalid.
  */
 ElectionTest electionDataFrom(int year, bool shouldSimplify) {
-    ifstream input("/Users/bryant/Programming/cs106b/assignment/cs106x-hw4-recursionrescue/cmake_template/res/Elections/Data/" + integerToString(year) + ".csv");
+    ifstream input("Elections/Data/" + integerToString(year) + ".csv");
     if (!input) {
         error("Can't open a data file for that year.");
     }

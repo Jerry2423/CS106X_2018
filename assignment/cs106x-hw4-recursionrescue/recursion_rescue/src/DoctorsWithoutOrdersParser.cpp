@@ -1,8 +1,8 @@
-#include "util/strlib.h"
+#include "strlib.h"
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "collections/vector.h"
+#include "vector.h"
 #include "DoctorsWithoutOrders.h"
 #include "RecursionToTheRescue.h"
 using namespace std;

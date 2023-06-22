@@ -1,7 +1,7 @@
 #ifndef TheWindow_Included
 #define TheWindow_Included
 
-#include "graphics/gwindow.h"
+#include "gwindow.h"
 #include <string>
 
 /* Background color. */

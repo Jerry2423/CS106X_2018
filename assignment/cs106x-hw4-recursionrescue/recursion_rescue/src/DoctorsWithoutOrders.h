@@ -2,7 +2,7 @@
 #define DoctorsWithoutOrders_Included
 
 #include "RecursionToTheRescue.h"
-#include "collections/vector.h"
+#include "vector.h"
 #include <istream>
 
 /**

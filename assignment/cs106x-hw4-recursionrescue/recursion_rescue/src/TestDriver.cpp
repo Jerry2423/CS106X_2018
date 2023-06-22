@@ -1,6 +1,6 @@
 #include "TestDriver.h"
 #include <string>
-#include "io/simpio.h"
+#include "simpio.h"
 using namespace std;
 
 void doFail(const char* message, size_t line, const char* filename) {

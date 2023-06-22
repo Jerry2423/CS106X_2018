@@ -1,12 +1,12 @@
 #include "Disasters.h"
 #include "TheWindow.h"
-#include "graphics/gobjects.h"
+#include "gobjects.h"
 #include <memory>
 #include <climits>
 #include <algorithm>
-#include "collections/hashmap.h"
-#include "collections/vector.h"
-#include "graphics/gevents.h"
+#include "hashmap.h"
+#include "vector.h"
+#include "gevents.h"
 using namespace std;
 
 /* Everything in here is private to this file. */

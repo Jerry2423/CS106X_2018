@@ -1,5 +1,5 @@
 #include "Disasters.h"
-#include "util/strlib.h"
+#include "strlib.h"
 #include <regex>
 using namespace std;
 

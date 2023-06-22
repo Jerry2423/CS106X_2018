@@ -39,7 +39,7 @@
 /*** Internal types used by the testing system. You should not need to use anything ***
  *** below this point.                                                              ***/
 
-#include "collections/linkedhashmap.h"
+#include "linkedhashmap.h"
 #include <functional>
 #include <stdexcept>
 

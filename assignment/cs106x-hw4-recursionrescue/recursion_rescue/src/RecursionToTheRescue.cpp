@@ -1,11 +1,13 @@
 #include "RecursionToTheRescue.h"
+#include "map.h"
 #include <climits>
 #include <iostream>
+#include <string>
 #include "Disasters.h"
-#include "collections/set.h"
-#include "collections/vector.h"
-#include "collections/map.h"
-#include "util/recursion.h"
+#include "set.h"
+#include "vector.h"
+#include "map.h"
+#include "recursion.h"
 using namespace std;
 
 /* * * * Doctors Without Orders * * * */
@@ -139,10 +141,57 @@ bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
  * @param maxDistance The maximum distance between them.
  * @return Whether the two strands are within that edit distance of one another.
  */
+
+int editDistance(string& w1, const string w2, int pos) {
+    //base case
+    if (pos == w1.size() && pos == w2.size()) {
+        return 0;
+    } else if (pos == w1.size() && pos < w2.size()) {
+        w1.push_back(w2[pos]);
+        int times = 1 + editDistance(w1, w2, pos+1);
+        w1.pop_back();
+        return times;
+    } else if (pos == w2.size() && pos < w1.size()) {
+        char ch = w1[pos];
+        w1.erase(w1.begin()+pos);
+        int times = 1+ editDistance(w1, w2, pos);
+        w1.insert(w1.begin()+pos, ch);
+        return times;
+    } else {
+        int ans;
+        if (w1[pos] == w2[pos]) {
+            ans = editDistance(w1, w2, pos+1);
+        } else {     
+            //insert: pos+1
+            //choose explore unchoose
+            w1.insert(w1.begin()+pos, w2[pos]);
+            ans = 1+editDistance(w1, w2, pos+1);
+            w1.erase(w1.begin()+pos);
+            //del
+            char ch = w1[pos];
+            w1.erase(w1.begin()+pos);
+            ans = min(ans, 1+editDistance(w1, w2, pos));
+            w1.insert(w1.begin()+pos, ch);
+            //replace
+            w1[pos] = w2[pos];
+            ans = min(ans, 1+editDistance(w1, w2, pos+1));
+            w1[pos] = ch;
+        }
+        return ans;
+    }
+    //case one: pos = w1.s && i < w2.s: append only
+
+    //case two: pos = w2.s && pos < w1.s del only
+
+    //normal case pos < w1.s && i < s2.s
+}
+
 bool approximatelyMatch(const string& one, const string& two, int maxDistance) {
     // [TODO: Delete these lines and implement this function!]
-    (void)(one, two, maxDistance);
-    return false;
+    string w1 = one;
+    int ans = editDistance(w1, two, 0);
+    cout << ans << endl;
+    return ans <= maxDistance;
 }
 
 /* * * * Winning the Election * * * */

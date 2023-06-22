@@ -1,4 +1,4 @@
-#include "util/strlib.h"
+#include "strlib.h"
 using namespace std;
 
 /* Inserts commas into a numeric string. */

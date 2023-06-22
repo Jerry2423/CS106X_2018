@@ -1,9 +1,9 @@
-#include "graphics/gwindow.h"
-#include "io/tokenscanner.h"
-#include "graphics/gevents.h"
-#include "collections/vector.h"
-#include "collections/map.h"
-#include "graphics/gevents.h"
+#include "gwindow.h"
+#include "tokenscanner.h"
+#include "gobjects.h"
+#include "vector.h"
+#include "map.h"
+#include "gevents.h"
 #include "RecursionToTheRescue.h"
 #include "TheWindow.h"
 #include "Common.h"
@@ -40,7 +40,7 @@ namespace {
     const double kWonPopVoteY     = 110;
 
     /* Name of the file containing the state shapes. */
-    const string kStateShapeFile  = "/Users/bryant/Programming/cs106b/assignment/cs106x-hw4-recursionrescue/cmake_template/res/Elections/Visualizer/us-borders.txt"; 
+    const string kStateShapeFile  = "Elections/Visualizer/us-borders.txt";
 
     /* The viewpoint coordinates - the minimum and maximum longitude
      * and latitude.

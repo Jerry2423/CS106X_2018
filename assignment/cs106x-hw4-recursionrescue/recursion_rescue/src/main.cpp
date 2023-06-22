@@ -3,16 +3,17 @@
 #include <fstream>
 #include <iomanip>
 #include <algorithm>
-#include "prep/RecursionToTheRescue.h"
-#include "prep/DoctorsWithoutOrders.h"
-#include "prep/Disasters.h"
+#include "RecursionToTheRescue.h"
+#include "DoctorsWithoutOrders.h"
+#include "Disasters.h"
 #include "Common.h"
-#include "io/console.h"
-#include "util/strlib.h"
+#include "console.h"
+#include "strlib.h"
+#include "vector.h"
 #include "Elections.h"
-#include "io/simpio.h"
-#include "io/filelib.h"
-#include "prep/TestDriver.h"
+#include "simpio.h"
+#include "filelib.h"
+#include "TestDriver.h"
 #include "DNADetectiveTests.h"
 using namespace std;
 

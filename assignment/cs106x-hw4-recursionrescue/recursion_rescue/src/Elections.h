@@ -1,7 +1,7 @@
 #ifndef Elections_Included
 #define Elections_Included
 
-#include "collections/vector.h"
+#include "vector.h"
 #include "RecursionToTheRescue.h"
 
 /**

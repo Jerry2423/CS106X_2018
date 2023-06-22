@@ -2,6 +2,7 @@
 #include "map.h"
 #include <climits>
 #include <iostream>
+#include <string>
 #include "Disasters.h"
 #include "set.h"
 #include "vector.h"
@@ -140,6 +141,37 @@ bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
  * @param maxDistance The maximum distance between them.
  * @return Whether the two strands are within that edit distance of one another.
  */
+
+int editDistance(string& w_1, const string w_2, int pos) {
+    //base case
+    if (pos == w_1.size() && pos == w_2.size()) {
+        return 0;
+    } else if (pos == w_1.size() && pos < w_2.size()) {
+        w_1.push_back(w_2[pos]);
+        int times = editDistance(w_1, w_2, pos+1);
+        w_1.pop_back();
+        return times;
+    } else if (pos == w_2.size() && pos < w_1.size()) {
+        char ch = w_1[pos];
+        w_1.erase(w_1.begin()+pos);
+        int times = editDistance(w_1, w_2, pos);
+        w_1.insert(w_1.begin()+pos, ch);
+        return times;
+    } else {
+        int ans;
+        //insert: pos+1
+        //choose explore unchoose
+
+        //del
+        //replace
+    }
+    //case one: pos = w1.s && i < w2.s: append only
+
+    //case two: pos = w2.s && pos < w1.s del only
+
+    //normal case pos < w1.s && i < s2.s
+}
+
 bool approximatelyMatch(const string& one, const string& two, int maxDistance) {
     // [TODO: Delete these lines and implement this function!]
     (void)(one, two, maxDistance);
