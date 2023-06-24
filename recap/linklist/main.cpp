@@ -4,10 +4,11 @@
 //std:next,advance
 using std::cout;
 using std::endl;
+using std::string;
 
 int main() {
-    MyLinkList fun {1, 2, 3, 4};
-    MyLinkList foo = fun;
+    MyLinkList<int> fun {1, 2, 3, 4};
+    MyLinkList<int> foo = fun;
     cout << fun << endl;
     cout << foo << endl;
     fun.pop_front();
@@ -43,7 +44,7 @@ int main() {
     fun[3] = 35;
     fun.reverse();
     cout << fun << endl;
-    MyLinkList edge;
+    MyLinkList<string> edge;
     // edge.insert_after(edge.begin(), 9); //undefined behavior
     // cout << edge << endl;
     return 0;

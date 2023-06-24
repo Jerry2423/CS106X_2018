@@ -8,21 +8,23 @@
 #include <ostream>
 #include <memory>
 
+template<typename T>
 struct ListNode {
-    int data;
-    ListNode* next;
+    T data;
+    ListNode<T>* next;
 };
 
 //TODO: template, < operator, const correctness.
-
+template<typename T>
 class MyLinkList {
     public:
-        using data_type = int;
+        using data_type = T;
         using size_type = size_t;
         using reference = data_type&;
         using const_reference = const data_type&;
-        // using iterator = ListNode*;
-        // using const_iterator = const ListNode*;
+        using node_ptr = ListNode<T>*;
+        // using iterator = node_ptr;
+        // using const_iterator = const node_ptr;
         
         //default constructor
         MyLinkList() : front_(nullptr), length_(0) {}
@@ -33,14 +35,14 @@ class MyLinkList {
         //copy constructor
         MyLinkList(const MyLinkList& other) : length_(other.size()) {
             if (other.size() > 0) {
-                ListNode* curr = other.front_;
-                front_ = new ListNode {curr->data, nullptr};
-                ListNode* temp = front_;
+                node_ptr curr = other.front_;
+                front_ = new ListNode<data_type> {curr->data, nullptr};
+                node_ptr temp = front_;
                 curr = curr->next;
                 while (curr != nullptr) {
                     //create newnode
                     //set temp->next = new node
-                    temp->next = new ListNode {curr->data, nullptr};
+                    temp->next = new ListNode<data_type> {curr->data, nullptr};
                     //move temp and curr to the next
                     temp = temp->next;
                     curr = curr->next;
@@ -68,10 +70,10 @@ class MyLinkList {
         //initializer_list constructor
         MyLinkList(std::initializer_list<data_type> init) : length_(init.size()) {
             if (init.size() > 0) {
-                front_ = new ListNode {*init.begin(), nullptr};
-                ListNode* temp = front_;
+                front_ = new ListNode<data_type> {*init.begin(), nullptr};
+                node_ptr temp = front_;
                 for (auto i = init.begin()+1; i != init.end(); ++i) {
-                    temp->next = new ListNode {*i, nullptr};
+                    temp->next = new ListNode<data_type> {*i, nullptr};
                     temp = temp->next;
                 }
             } else {
@@ -82,10 +84,10 @@ class MyLinkList {
         //push_front_
         void push_front(const data_type& value) {
             if (empty()) {
-                front_ = new ListNode{value, nullptr};
+                front_ = new ListNode<data_type>{value, nullptr};
                 length_ += 1;
             } else {
-                ListNode* temp = new ListNode{value, front_};
+                node_ptr temp = new ListNode<data_type>{value, front_};
                 front_ = temp;
                 length_ += 1;
             }
@@ -93,7 +95,7 @@ class MyLinkList {
         //pop_front
         void pop_front() {
             if (!empty()) {
-                ListNode* temp = front_;
+                node_ptr temp = front_;
                 front_ = front_->next;
                 delete temp;
                 length_ -= 1;
@@ -126,11 +128,11 @@ class MyLinkList {
                 //non-member: == and !=
 
                 //base
-                ListNode* base() const {
+                node_ptr base() const {
                     return pointee_;
                 }
                 //next
-                ListNode* next() const {
+                node_ptr next() const {
                     return pointee_->next;
                 }
                 //++ operator(posfix and prefix) member
@@ -159,14 +161,14 @@ class MyLinkList {
                 }
                 
             private:
-                //constructor: it(ListNode* pointee): private: only friend can construc
-                iterator(ListNode* pointee) : pointee_(pointee) {};
-                ListNode* pointee_;
+                //constructor: it(node_ptr pointee): private: only friend can construc
+                iterator(node_ptr pointee) : pointee_(pointee) {};
+                node_ptr pointee_;
         };
         //insert_after
         iterator insert_after(iterator it, const data_type& value) {
            auto temp = it.pointee_->next;
-           it.pointee_->next = new ListNode{value, temp};
+           it.pointee_->next = new ListNode<data_type>{value, temp};
            length_ += 1;
            return iterator(it.base()->next);
         }
@@ -183,7 +185,7 @@ class MyLinkList {
 
         void add_back(const data_type& value) {
             if (empty()) {
-                front_ = new ListNode {value, nullptr};
+                front_ = new ListNode<data_type> {value, nullptr};
             } else {
                 insert_after(std::next(begin(), size()-1), value);
             }
@@ -244,7 +246,7 @@ class MyLinkList {
 
 
     private:
-        static void deleteFrom(ListNode* head) {
+        static void deleteFrom(node_ptr head) {
             if (!head) {
                 return;
             } else {
@@ -253,12 +255,12 @@ class MyLinkList {
             }
         }
 
-        ListNode* reverseHelper(ListNode* curr, ListNode* prev) {
+        node_ptr reverseHelper(node_ptr curr, node_ptr prev) {
             if (!curr->next) {
                 curr -> next = prev;
                 return curr;
             }
-            // ListNode* new_head = reverseHelper(curr->next, curr);
+            // node_ptr new_head = reverseHelper(curr->next, curr);
             // curr->next = prev;
             // return new_head;
             //better tail recursion way
@@ -267,19 +269,22 @@ class MyLinkList {
             return reverseHelper(temp, curr);
         }
 
-        ListNode* front_;
+        node_ptr front_;
         size_type length_;
 };
 
-bool operator==(const MyLinkList::iterator& lhs, const MyLinkList::iterator& rhs) {
+template<typename T>
+bool operator==(const typename MyLinkList<T>::iterator& lhs, const typename MyLinkList<T>::iterator& rhs) {
     return lhs.base() == rhs.base();
 }
 
-bool operator!=(const MyLinkList::iterator& lhs, const MyLinkList::iterator& rhs) {
+template<typename T>
+bool operator!=(const typename MyLinkList<T>::iterator& lhs, const typename MyLinkList<T>::iterator& rhs) {
     return !(lhs == rhs);
 }
 
-std::ostream& operator<<(std::ostream& os, const MyLinkList& l) {
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const MyLinkList<T>& l) {
     os << "{";
     if (!l.empty()) {
         os << *l.begin();
