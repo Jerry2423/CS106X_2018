@@ -1,0 +1,1317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		87688200B77946D6BDC858C1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48E5363E4C8A4B89802D0F34 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				09A4DE152A69464193716164 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		B2C70CFF70D94F84AD1F117B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E5182ABFD58145ABB316E928 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B2CA7E77F4202EFD7ABC078D /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				79BDF610D497484FB3BB5575 /* PBXTargetDependency */,
+				4068A89F8387436DB31776F6 /* PBXTargetDependency */,
+				7B42937D1D5240E89538ACE8 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0288C7462D3A4F07911D242F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.cpp */ = {isa = PBXBuildFile; fileRef = 969C548452884DACA03C95AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.cpp */; };
+		04E54A92FAA7478B8C56DA44 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.h */ = {isa = PBXBuildFile; fileRef = 24A5D765DAF44C01ACF7A4A8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.h */; };
+		0618BC9F33804C0CBDB939DB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.h */ = {isa = PBXBuildFile; fileRef = 4CA6E53DDEE542CBAA1F6929 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.h */; };
+		0C7B3777C5B74EB5ABAAFD0A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.cpp */ = {isa = PBXBuildFile; fileRef = 8A17C85F224B481FBDE5D114 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.cpp */; };
+		0E92EF2F09EA4CC68402BD8E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/stack_exception.h */ = {isa = PBXBuildFile; fileRef = 7CC13E8E561B489298D9F6C9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/stack_exception.h */; };
+		111D991D46BF4D69AA5313D7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/forwardingstreambuf.h */ = {isa = PBXBuildFile; fileRef = F4DAE77E0B33464B930D761E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/forwardingstreambuf.h */; };
+		113844C58CFE49B9BB213C20 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.cpp */ = {isa = PBXBuildFile; fileRef = 0BCCF1D7142B4FF9B2FB1427 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.cpp */; };
+		11FC9F5DC8CE470BBB71A476 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.h */ = {isa = PBXBuildFile; fileRef = 5C1AD30DD04B485FA44C6AA5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.h */; };
+		15DF5085CBF04FEF9B5920A1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.cpp */ = {isa = PBXBuildFile; fileRef = 16DCD4839BD948308BFF76DB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.cpp */; };
+		1E5D70EC9D2E44FFA4ADA8C5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack.h */ = {isa = PBXBuildFile; fileRef = D36CA66EF5164DC0B52FF9AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack.h */; };
+		1EE704482EFB4C6F9ABE739C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.cpp */ = {isa = PBXBuildFile; fileRef = 3121F4A2B9A544E8886A7344 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.cpp */; };
+		2233629CF31441B391832B64 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AF294F18F4F34822A3A499E0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */; };
+		23826FB369954F3FB9BED9D5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/graph.h */ = {isa = PBXBuildFile; fileRef = 6CACF004271644D0898734FE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/graph.h */; };
+		2BA69BAE8DCC4768A5BCB727 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.cpp */ = {isa = PBXBuildFile; fileRef = 930E147E49184CA9B32DF6B0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.cpp */; };
+		2C85727788AF41C5A1825A59 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.h */ = {isa = PBXBuildFile; fileRef = 4E442577C67842339EE735DE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.h */; };
+		2ECC07AFE9204A779F3B56B9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.h */ = {isa = PBXBuildFile; fileRef = 58CC7FB35644425B91190412 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.h */; };
+		32877541B60246918E656DB6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.h */ = {isa = PBXBuildFile; fileRef = FCC01E7F11F74C2FB037D824 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.h */; };
+		37CF4D77AB0744598C9B8F08 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashset.h */ = {isa = PBXBuildFile; fileRef = 33FA6F2C083345ACA6A24B02 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashset.h */; };
+		3BF571DB16F2491A82EE8821 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/set.h */ = {isa = PBXBuildFile; fileRef = 112AF7D27C40486191EAA536 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/set.h */; };
+		3BFB0448FFD34E3897F3F043 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_gcc.cpp */ = {isa = PBXBuildFile; fileRef = 7B0042955616449E8EFE0DD7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_gcc.cpp */; };
+		4112DE46303E4782953B295F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.cpp */ = {isa = PBXBuildFile; fileRef = 3AAE6480D76447A0838A8A9B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.cpp */; };
+		421F6DB778444C32AF9B2F87 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.h */ = {isa = PBXBuildFile; fileRef = FD3639D119894C5A96326015 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.h */; };
+		433543439AE44133A4E887E4 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/foreachpatch.h */ = {isa = PBXBuildFile; fileRef = 16D764EAFE664B9F8C43CFB7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/foreachpatch.h */; };
+		43FA2AF8FD224BAFBB110E6F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.h */ = {isa = PBXBuildFile; fileRef = CAB99DD63A034DC39CFA3BC7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.h */; };
+		4419615DADC241C5A8BF822E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stl.h */ = {isa = PBXBuildFile; fileRef = D730A16AFC0A4075BFF24382 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stl.h */; };
+		49813C15E29441519F9C9151 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedlist.h */ = {isa = PBXBuildFile; fileRef = 1CE4169269EA4D6C95065902 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedlist.h */; };
+		4B0538142EF843EAA69C82F9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stack.h */ = {isa = PBXBuildFile; fileRef = 1833E05EB7A444DD8DAFC786 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stack.h */; };
+		4B6CB0E980904890A8D51416 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashset.h */ = {isa = PBXBuildFile; fileRef = 22DDDC134B9741418B0A7FAB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashset.h */; };
+		4FDB33E7462A465C8BB0C9B3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.h */ = {isa = PBXBuildFile; fileRef = DCA663E0B29045F2A119A7C2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.h */; };
+		51F5D47660AF443884F7C858 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.cpp */ = {isa = PBXBuildFile; fileRef = 4BCA51A9A0354FB58EAE0A62 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.cpp */; };
+		5541E68D27014EC6B7A6842D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.cpp */ = {isa = PBXBuildFile; fileRef = 9ADA7B2943084DE991358723 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.cpp */; };
+		566DAFD43EC14315BF7EC4E7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/sparsegrid.h */ = {isa = PBXBuildFile; fileRef = AF7F969B19964885A7412B54 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/sparsegrid.h */; };
+		567C3171F90244E5A50E1075 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/randompatch.h */ = {isa = PBXBuildFile; fileRef = E3F9ED96504D484D9E1D84E5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/randompatch.h */; };
+		573E7D6CC82440EF867F44E3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.h */ = {isa = PBXBuildFile; fileRef = 905D643411B945B7BFAE0F23 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.h */; };
+		602B7A9C85C04BD1933193B3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.h */ = {isa = PBXBuildFile; fileRef = A5977279A48D4A44AD253390 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.h */; };
+		621429A3507F4B9F9CF7BD74 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.cpp */ = {isa = PBXBuildFile; fileRef = A61EA5760A8D470F8F21EC3C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.cpp */; };
+		6369541A99F54E95A12D0B88 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.h */ = {isa = PBXBuildFile; fileRef = 75DEE3ADA7C54F11B7ED6EF1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.h */; };
+		638888812EC0403CA417E627 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.h */ = {isa = PBXBuildFile; fileRef = 41C00DC31FCC4AE5BF666A2C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.h */; };
+		65ABCB51A889427E95487789 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.h */ = {isa = PBXBuildFile; fileRef = 0BF0885E3CF14CD2A81171AF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.h */; };
+		67EC051DE05A41B8ACD3B735 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.h */ = {isa = PBXBuildFile; fileRef = E0914FB1D71C4FF2BDBD2A64 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.h */; };
+		6B9C6425B5D7431E8D6ED5A8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.cpp */ = {isa = PBXBuildFile; fileRef = 55A650E5366C4C52813DCB98 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.cpp */; };
+		6C59EF4D701E49AC9329CA4D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.cpp */ = {isa = PBXBuildFile; fileRef = C008420EC38D45CC82EC96BD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.cpp */; };
+		6D61943484774054A7F5C07B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/foreach.h */ = {isa = PBXBuildFile; fileRef = BF383E7D6A264BA1B0D685AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/foreach.h */; };
+		7087391672C647D88BF50B0E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/vector.h */ = {isa = PBXBuildFile; fileRef = 842430913DFB4599B4D9CC5F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/vector.h */; };
+		70FFACA4371C4B7B974386A3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8B5C774D71A347508B20C7FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */; };
+		71AC2D2FE6A1499D86286F04 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashmap.h */ = {isa = PBXBuildFile; fileRef = A83D961319A74875977593D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashmap.h */; };
+		727ED3B6923942E4BD4E13D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/map.h */ = {isa = PBXBuildFile; fileRef = 0878213E0F764D42B97C5879 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/map.h */; };
+		73BAB25270474EF7A40C6F48 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.cpp */ = {isa = PBXBuildFile; fileRef = 4249B0259962472D9D1A1C41 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.cpp */; };
+		76A1F7E54DBC43ECBF9E8E87 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.h */ = {isa = PBXBuildFile; fileRef = 4B85730C6EEE4C4E9FE5633A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.h */; };
+		76C185A25BBF44EABA9CCB76 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.cpp */ = {isa = PBXBuildFile; fileRef = BFEC22FD39E94EB880FD4012 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.cpp */; };
+		76FCD97369F64532A9A6A0DC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/init.h */ = {isa = PBXBuildFile; fileRef = 59A39B8F4BD04466BA954A49 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/init.h */; };
+		7A7F884FC3DB4768AB1BB5C6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.h */ = {isa = PBXBuildFile; fileRef = 9A2BD16B4E234D2CAC5C2B94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.h */; };
+		7A90E6A3A25D48F99E7FC74F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.cpp */ = {isa = PBXBuildFile; fileRef = 10F24091CE90424EBBB3CB39 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.cpp */; };
+		7C88EF638E864D58A2E7034B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/consolestreambuf.h */ = {isa = PBXBuildFile; fileRef = AB91A730A1F54AF2AAE5B5E7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/consolestreambuf.h */; };
+		7D100EBC7C874B05BBD96814 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.cpp */ = {isa = PBXBuildFile; fileRef = A7EE2449ED5C402E86E27907 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.cpp */; };
+		7FD05195A2534BF792C7661B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_windows.cpp */ = {isa = PBXBuildFile; fileRef = 14D5C3C72BC2449D8CCDC9D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_windows.cpp */; };
+		80A5FBAA85A5443ABEAF53C0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/collections.h */ = {isa = PBXBuildFile; fileRef = 01429444E4EB4414BED130B8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/collections.h */; };
+		8194127D09DC45508738680E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.cpp */ = {isa = PBXBuildFile; fileRef = EDDF1BA4C9F0477D9646DEFC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.cpp */; };
+		88333DC5ED354776B4A5C801 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.h */ = {isa = PBXBuildFile; fileRef = CCD86BE8592A4C71BAF9566C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.h */; };
+		8890F6006D714E43B85FF1F4 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/grid.h */ = {isa = PBXBuildFile; fileRef = FE37A0557898471DB443E534 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/grid.h */; };
+		901C5563EDF3402085804B20 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.cpp */ = {isa = PBXBuildFile; fileRef = ECCFC39210A7447C97459853 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.cpp */; };
+		90510C1418B5421B904B663A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.h */ = {isa = PBXBuildFile; fileRef = A4EE704306184563BDB96727 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.h */; };
+		90942FCC99FB492EB1851B51 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.h */ = {isa = PBXBuildFile; fileRef = D5807354FFD94767A1A2E8BC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.h */; };
+		91AE41F63631477C80D92DA6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.cpp */ = {isa = PBXBuildFile; fileRef = DA351978BAA64EFA8BABCF7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.cpp */; };
+		939EBC7651F344518FE66100 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.h */ = {isa = PBXBuildFile; fileRef = 1AE7C822EFCE4D28B78C342B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.h */; };
+		97EB986B22224257AEBB1FD2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.h */ = {isa = PBXBuildFile; fileRef = 78EBF80FCFA34ABA87B653D3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.h */; };
+		9E280809307843239EF61136 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.cpp */ = {isa = PBXBuildFile; fileRef = F9985A0CC67C45C7B183BB4F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.cpp */; };
+		9E943E18E28F4C6E978D147D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.h */ = {isa = PBXBuildFile; fileRef = 5FE67EE672684B1F9CABD503 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.h */; };
+		A0026973C02A49A4B9387B9E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/static.h */ = {isa = PBXBuildFile; fileRef = 21DACFEBE74A4708BA1EAA5E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/static.h */; };
+		A09C3D35E0294CB5895592C1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.cpp */ = {isa = PBXBuildFile; fileRef = 58FE391B5B3B46649EB378F9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.cpp */; };
+		A481425BE91D467DAC6FF219 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tokenpatch.h */ = {isa = PBXBuildFile; fileRef = 19910291CDA24A69B1E6A2D4 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tokenpatch.h */; };
+		A6A7C955B27B4F01866AE567 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/deque.h */ = {isa = PBXBuildFile; fileRef = D4EF88E4F11A4A3EB18C11FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/deque.h */; };
+		AADCBC365F094250B3177307 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tplatform.h */ = {isa = PBXBuildFile; fileRef = D402D8D8E48E4B06ABB1D030 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tplatform.h */; };
+		AAE3D0B75859471FAB234F9A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.h */ = {isa = PBXBuildFile; fileRef = C90CC381D4D44A90B7ACB377 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.h */; };
+		ABFAD95E6AA647EC971D4951 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.cpp */ = {isa = PBXBuildFile; fileRef = 6A88F7FD18D042248EB13DE3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.cpp */; };
+		AEF6D2E3B7934F1398916267 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/queue.h */ = {isa = PBXBuildFile; fileRef = 2C1CBC0F287E4E479E8C04DD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/queue.h */; };
+		B08399A45E094EDE8A261B94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.cpp */ = {isa = PBXBuildFile; fileRef = C707D23C894D4E16811C0FC2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.cpp */; };
+		B133DB383EE841D181CAEAF3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.h */ = {isa = PBXBuildFile; fileRef = 52CBD732E3DD45268CF16B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.h */; };
+		B211D24A9E954C6AA934D4DD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.cpp */ = {isa = PBXBuildFile; fileRef = 24FB04E891154A4F94D3DDF3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.cpp */; };
+		B2D0C4DA1BAA43E7BB52FDD7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.h */ = {isa = PBXBuildFile; fileRef = FF860206E9CC42B4A5E40B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.h */; };
+		B32A1DEFD06C43B9A1C7BBE9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/limitoutputstreambuf.h */ = {isa = PBXBuildFile; fileRef = B417B57F134D4F29A7285C4D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/limitoutputstreambuf.h */; };
+		B4E443D36B3046989D0896CA /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.h */ = {isa = PBXBuildFile; fileRef = 50D12A0E5E264ABC87AB0C18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.h */; };
+		B65996A69B3D4385AC396E79 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.h */ = {isa = PBXBuildFile; fileRef = EFF4FBF142DD412D81E346A5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.h */; };
+		B8F5EC269BAF4066B1A3304D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.cpp */ = {isa = PBXBuildFile; fileRef = 7BF3DADD204648368808EB05 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.cpp */; };
+		BBCFB9BEA4ED48C385B1F497 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.cpp */ = {isa = PBXBuildFile; fileRef = 2A45A9F1C2C64052B45C3C1C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.cpp */; };
+		BC6044E0540342AB97E2A993 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.cpp */ = {isa = PBXBuildFile; fileRef = 9BEB6B0CA7BD49CF81465B3B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.cpp */; };
+		BFCE46A69D7E4F36A4A65D67 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/pqueue.h */ = {isa = PBXBuildFile; fileRef = 6816B1C7BBE845848A3D864C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/pqueue.h */; };
+		C0A43C1608BA41ACA7BFB876 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.cpp */ = {isa = PBXBuildFile; fileRef = 5052A305EB9D4E858EF0320B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.cpp */; };
+		C1DF1BC427F74DAA8A001F94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.cpp */ = {isa = PBXBuildFile; fileRef = A9592E638784470985B6D86C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.cpp */; };
+		C42E35B12BCE4C3A9684C026 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.h */ = {isa = PBXBuildFile; fileRef = 7693D346BA7C4405BA737DD1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.h */; };
+		C83CE3C34D8146D8AA6BEC25 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.cpp */ = {isa = PBXBuildFile; fileRef = 0403947500464850B4B62ED7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.cpp */; };
+		C8ED2D19AC6F42728AB25DAE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.cpp */ = {isa = PBXBuildFile; fileRef = A52BF66A7DC24A7AAC53D160 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.cpp */; };
+		C971452D377146DAB6A07DD8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.cpp */ = {isa = PBXBuildFile; fileRef = 44456AF15F854D9A93CA6F18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.cpp */; };
+		CE4FF1FE91434336A889BFB0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.cpp */ = {isa = PBXBuildFile; fileRef = 683293FC7B86458B871F6B6A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.cpp */; };
+		D0AFF610C9074356AD9928F2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.h */ = {isa = PBXBuildFile; fileRef = 6FBBAB00115340A5A9BAE22F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.h */; };
+		D1F47BD210C14830BEFF87EC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashmap.h */ = {isa = PBXBuildFile; fileRef = 22BCFAE408A945438390E199 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashmap.h */; };
+		D237F2DEEDDA438985C4CB93 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.h */ = {isa = PBXBuildFile; fileRef = 23CDB77D20CD448C93F4267E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.h */; };
+		D589119BD91446F4925293F6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.cpp */ = {isa = PBXBuildFile; fileRef = 3DCF20A2FF4045E18B2CE96C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.cpp */; };
+		D9BE5BBB79DA4F519B3DE16D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.cpp */ = {isa = PBXBuildFile; fileRef = D0FCC9F06D724688B0251BE9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.cpp */; };
+		DA79DCD1BD314612A602D2CB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/priorityqueue.h */ = {isa = PBXBuildFile; fileRef = 772FA107BD414AD7AE6E2D0A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/priorityqueue.h */; };
+		DA7F0BCBDA7341CDA727DF43 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.h */ = {isa = PBXBuildFile; fileRef = 023B0EE3B248418786FAA0A9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.h */; };
+		E0922C5F92F140A5A342A2B3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.h */ = {isa = PBXBuildFile; fileRef = 751C87A7FD4E47B78A77D25F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.h */; };
+		E14D9BE447D147B590C1B2BB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.h */ = {isa = PBXBuildFile; fileRef = E06CBB8123794285B5FF376E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.h */; };
+		E19C82DED0A248C89D3C0B5C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.h */ = {isa = PBXBuildFile; fileRef = 5BFB609510E34875A5B1AD7A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.h */; };
+		E27B38F5A66940FFBC993432 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/echoinputstreambuf.h */ = {isa = PBXBuildFile; fileRef = 9E7C8DECE32940E78D50BB7D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/echoinputstreambuf.h */; };
+		E65F31A1289C49E0AA6816D5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.cpp */ = {isa = PBXBuildFile; fileRef = DCA6746D1D884DEE8AEF3BDF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.cpp */; };
+		E76795267A0949F88ED3E5F6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.h */ = {isa = PBXBuildFile; fileRef = 3890FF9401104B27BBC714BF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.h */; };
+		EFE8EBCD99DE4FA09BB8AA08 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.cpp */ = {isa = PBXBuildFile; fileRef = C13F27EF5A4B490C9EE99DA3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.cpp */; };
+		F180B760CCAB4D3FA43F5505 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.cpp */ = {isa = PBXBuildFile; fileRef = 6499E13435C949E08A279DBF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.cpp */; };
+		F46ACD7DFBA946AF9588BD23 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.h */ = {isa = PBXBuildFile; fileRef = A87AF2DCA4714898AACCF98A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.h */; };
+		F646E7080D7E4A1DAA1E33BE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.h */ = {isa = PBXBuildFile; fileRef = 5BDDA607BA924905A01B36AA /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.h */; };
+		F9162D17A495422D998E5EAD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.cpp */ = {isa = PBXBuildFile; fileRef = 93CAD0778CFD40C6BF7AA850 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.cpp */; };
+		FA55752017D842E9BFD4DAD6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.cpp */ = {isa = PBXBuildFile; fileRef = 8B0FC195EE304E20B581EF15 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.cpp */; };
+		FD270DA7AF8F492ABDE2E8B2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/src/knapsack.cpp */ = {isa = PBXBuildFile; fileRef = 8F8AE0F981BA4191A9AB94AC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/src/knapsack.cpp */; };
+		FE6512CB3E1A497FA9F87DC3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.h */ = {isa = PBXBuildFile; fileRef = 9AB097A0F8024917851E4A7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.h */; };
+		FEB570905AF44CABAB435785 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.h */ = {isa = PBXBuildFile; fileRef = D9858337890842C4B5529889 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		621F216115BD4E2B905CCCB3 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		7EE4D29495F6452CB2946CCF /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		8BB04C28062F4AA5AC6439F0 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		CC8D80EB858E4C0B8AED9F33 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		540530CD14FD4049AF983032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87688200B77946D6BDC858C1;
+			remoteInfo = ZERO_CHECK;
+		};
+		63B4A3D10F1D4A00A13D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87688200B77946D6BDC858C1;
+			remoteInfo = ZERO_CHECK;
+		};
+		837A9848ACAB4EF791C74AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF1A74E43524DD0B832F098;
+			remoteInfo = stanford;
+		};
+		A69FA10D8AD04B3998843C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF1A74E43524DD0B832F098;
+			remoteInfo = stanford;
+		};
+		DA91B717919C4206A6A82DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87688200B77946D6BDC858C1;
+			remoteInfo = ZERO_CHECK;
+		};
+		E292DA6C89ED4424918A8D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8717EC83895941E6BFBA4AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C460D05EDB3C44EB8A132E8B;
+			remoteInfo = app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01429444E4EB4414BED130B8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/collections.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collections.h; path = lib/StanfordCPPLib/collections/collections.h; sourceTree = SOURCE_ROOT; };
+		023B0EE3B248418786FAA0A9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = console.h; path = lib/StanfordCPPLib/io/console.h; sourceTree = SOURCE_ROOT; };
+		0403947500464850B4B62ED7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regexpr.cpp; path = lib/StanfordCPPLib/util/regexpr.cpp; sourceTree = SOURCE_ROOT; };
+		0878213E0F764D42B97C5879 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/map.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map.h; path = lib/StanfordCPPLib/collections/map.h; sourceTree = SOURCE_ROOT; };
+		0BCCF1D7142B4FF9B2FB1427 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gobjects.cpp; path = lib/StanfordCPPLib/graphics/gobjects.cpp; sourceTree = SOURCE_ROOT; };
+		0BF0885E3CF14CD2A81171AF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gobjects.h; path = lib/StanfordCPPLib/graphics/gobjects.h; sourceTree = SOURCE_ROOT; };
+		10F24091CE90424EBBB3CB39 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = point.cpp; path = lib/StanfordCPPLib/util/point.cpp; sourceTree = SOURCE_ROOT; };
+		112AF7D27C40486191EAA536 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/set.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = set.h; path = lib/StanfordCPPLib/collections/set.h; sourceTree = SOURCE_ROOT; };
+		14D5C3C72BC2449D8CCDC9D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_windows.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = call_stack_windows.cpp; path = lib/StanfordCPPLib/system/call_stack_windows.cpp; sourceTree = SOURCE_ROOT; };
+		16D764EAFE664B9F8C43CFB7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/foreachpatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = foreachpatch.h; path = lib/StanfordCPPLib/private/foreachpatch.h; sourceTree = SOURCE_ROOT; };
+		16DCD4839BD948308BFF76DB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = exceptions.cpp; path = lib/StanfordCPPLib/system/exceptions.cpp; sourceTree = SOURCE_ROOT; };
+		1833E05EB7A444DD8DAFC786 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stack.h; path = lib/StanfordCPPLib/collections/stack.h; sourceTree = SOURCE_ROOT; };
+		19910291CDA24A69B1E6A2D4 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tokenpatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tokenpatch.h; path = lib/StanfordCPPLib/private/tokenpatch.h; sourceTree = SOURCE_ROOT; };
+		1AE7C822EFCE4D28B78C342B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gmath.h; path = lib/StanfordCPPLib/util/gmath.h; sourceTree = SOURCE_ROOT; };
+		1CE4169269EA4D6C95065902 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = linkedlist.h; path = lib/StanfordCPPLib/collections/linkedlist.h; sourceTree = SOURCE_ROOT; };
+		21DACFEBE74A4708BA1EAA5E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/static.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = static.h; path = lib/StanfordCPPLib/private/static.h; sourceTree = SOURCE_ROOT; };
+		22BCFAE408A945438390E199 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hashmap.h; path = lib/StanfordCPPLib/collections/hashmap.h; sourceTree = SOURCE_ROOT; };
+		22DDDC134B9741418B0A7FAB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = linkedhashset.h; path = lib/StanfordCPPLib/collections/linkedhashset.h; sourceTree = SOURCE_ROOT; };
+		23CDB77D20CD448C93F4267E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = urlstream.h; path = lib/StanfordCPPLib/io/urlstream.h; sourceTree = SOURCE_ROOT; };
+		24A5D765DAF44C01ACF7A4A8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shuffle.h; path = lib/StanfordCPPLib/collections/shuffle.h; sourceTree = SOURCE_ROOT; };
+		24FB04E891154A4F94D3DDF3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gfilechooser.cpp; path = lib/StanfordCPPLib/graphics/gfilechooser.cpp; sourceTree = SOURCE_ROOT; };
+		2A45A9F1C2C64052B45C3C1C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hashcode.cpp; path = lib/StanfordCPPLib/collections/hashcode.cpp; sourceTree = SOURCE_ROOT; };
+		2C1CBC0F287E4E479E8C04DD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = queue.h; path = lib/StanfordCPPLib/collections/queue.h; sourceTree = SOURCE_ROOT; };
+		3121F4A2B9A544E8886A7344 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shuffle.cpp; path = lib/StanfordCPPLib/collections/shuffle.cpp; sourceTree = SOURCE_ROOT; };
+		33FA6F2C083345ACA6A24B02 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hashset.h; path = lib/StanfordCPPLib/collections/hashset.h; sourceTree = SOURCE_ROOT; };
+		3890FF9401104B27BBC714BF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tokenscanner.h; path = lib/StanfordCPPLib/io/tokenscanner.h; sourceTree = SOURCE_ROOT; };
+		3AAE6480D76447A0838A8A9B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = server.cpp; path = lib/StanfordCPPLib/io/server.cpp; sourceTree = SOURCE_ROOT; };
+		3DCF20A2FF4045E18B2CE96C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gevents.cpp; path = lib/StanfordCPPLib/graphics/gevents.cpp; sourceTree = SOURCE_ROOT; };
+		41C00DC31FCC4AE5BF666A2C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dawglexicon.h; path = lib/StanfordCPPLib/collections/dawglexicon.h; sourceTree = SOURCE_ROOT; };
+		4249B0259962472D9D1A1C41 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = note.cpp; path = lib/StanfordCPPLib/util/note.cpp; sourceTree = SOURCE_ROOT; };
+		44456AF15F854D9A93CA6F18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tokenscanner.cpp; path = lib/StanfordCPPLib/io/tokenscanner.cpp; sourceTree = SOURCE_ROOT; };
+		461B6381948E4D46BE2BBC21 /* app */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B85730C6EEE4C4E9FE5633A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = exceptions.h; path = lib/StanfordCPPLib/system/exceptions.h; sourceTree = SOURCE_ROOT; };
+		4BCA51A9A0354FB58EAE0A62 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtable.cpp; path = lib/StanfordCPPLib/graphics/gtable.cpp; sourceTree = SOURCE_ROOT; };
+		4CA6E53DDEE542CBAA1F6929 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = error.h; path = lib/StanfordCPPLib/system/error.h; sourceTree = SOURCE_ROOT; };
+		4E442577C67842339EE735DE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = random.h; path = lib/StanfordCPPLib/util/random.h; sourceTree = SOURCE_ROOT; };
+		5052A305EB9D4E858EF0320B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = version.cpp; path = lib/StanfordCPPLib/private/version.cpp; sourceTree = SOURCE_ROOT; };
+		50D12A0E5E264ABC87AB0C18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gevents.h; path = lib/StanfordCPPLib/graphics/gevents.h; sourceTree = SOURCE_ROOT; };
+		52CBD732E3DD45268CF16B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = strlib.h; path = lib/StanfordCPPLib/util/strlib.h; sourceTree = SOURCE_ROOT; };
+		55A650E5366C4C52813DCB98 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = observable.cpp; path = lib/StanfordCPPLib/util/observable.cpp; sourceTree = SOURCE_ROOT; };
+		58CC7FB35644425B91190412 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timer.h; path = lib/StanfordCPPLib/util/timer.h; sourceTree = SOURCE_ROOT; };
+		58FE391B5B3B46649EB378F9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = direction.cpp; path = lib/StanfordCPPLib/util/direction.cpp; sourceTree = SOURCE_ROOT; };
+		59A39B8F4BD04466BA954A49 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/init.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = init.h; path = lib/StanfordCPPLib/private/init.h; sourceTree = SOURCE_ROOT; };
+		5BDDA607BA924905A01B36AA /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gtimer.h; path = lib/StanfordCPPLib/graphics/gtimer.h; sourceTree = SOURCE_ROOT; };
+		5BFB609510E34875A5B1AD7A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gtable.h; path = lib/StanfordCPPLib/graphics/gtable.h; sourceTree = SOURCE_ROOT; };
+		5C1AD30DD04B485FA44C6AA5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bitstream.h; path = lib/StanfordCPPLib/io/bitstream.h; sourceTree = SOURCE_ROOT; };
+		5FE67EE672684B1F9CABD503 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gbufferedimage.h; path = lib/StanfordCPPLib/graphics/gbufferedimage.h; sourceTree = SOURCE_ROOT; };
+		6499E13435C949E08A279DBF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = random.cpp; path = lib/StanfordCPPLib/util/random.cpp; sourceTree = SOURCE_ROOT; };
+		6816B1C7BBE845848A3D864C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/pqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pqueue.h; path = lib/StanfordCPPLib/collections/pqueue.h; sourceTree = SOURCE_ROOT; };
+		683293FC7B86458B871F6B6A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = lib/StanfordCPPLib/io/base64.cpp; sourceTree = SOURCE_ROOT; };
+		6A88F7FD18D042248EB13DE3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ginteractors.cpp; path = lib/StanfordCPPLib/graphics/ginteractors.cpp; sourceTree = SOURCE_ROOT; };
+		6CACF004271644D0898734FE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/graph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = graph.h; path = lib/StanfordCPPLib/collections/graph.h; sourceTree = SOURCE_ROOT; };
+		6FBBAB00115340A5A9BAE22F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = regexpr.h; path = lib/StanfordCPPLib/util/regexpr.h; sourceTree = SOURCE_ROOT; };
+		751C87A7FD4E47B78A77D25F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = filelib.h; path = lib/StanfordCPPLib/io/filelib.h; sourceTree = SOURCE_ROOT; };
+		75DEE3ADA7C54F11B7ED6EF1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = version.h; path = lib/StanfordCPPLib/private/version.h; sourceTree = SOURCE_ROOT; };
+		7693D346BA7C4405BA737DD1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = platform.h; path = lib/StanfordCPPLib/private/platform.h; sourceTree = SOURCE_ROOT; };
+		772FA107BD414AD7AE6E2D0A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/priorityqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = priorityqueue.h; path = lib/StanfordCPPLib/collections/priorityqueue.h; sourceTree = SOURCE_ROOT; };
+		78EBF80FCFA34ABA87B653D3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = direction.h; path = lib/StanfordCPPLib/util/direction.h; sourceTree = SOURCE_ROOT; };
+		7B0042955616449E8EFE0DD7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_gcc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = call_stack_gcc.cpp; path = lib/StanfordCPPLib/system/call_stack_gcc.cpp; sourceTree = SOURCE_ROOT; };
+		7BF3DADD204648368808EB05 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = strlib.cpp; path = lib/StanfordCPPLib/util/strlib.cpp; sourceTree = SOURCE_ROOT; };
+		7CC13E8E561B489298D9F6C9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/stack_exception.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stack_exception.h; path = lib/StanfordCPPLib/system/stack_exception.h; sourceTree = SOURCE_ROOT; };
+		842430913DFB4599B4D9CC5F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector.h; path = lib/StanfordCPPLib/collections/vector.h; sourceTree = SOURCE_ROOT; };
+		8A17C85F224B481FBDE5D114 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sound.cpp; path = lib/StanfordCPPLib/util/sound.cpp; sourceTree = SOURCE_ROOT; };
+		8B0FC195EE304E20B581EF15 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = basicgraph.cpp; path = lib/StanfordCPPLib/collections/basicgraph.cpp; sourceTree = SOURCE_ROOT; };
+		8B5C774D71A347508B20C7FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8F8AE0F981BA4191A9AB94AC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/src/knapsack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = knapsack.cpp; path = src/knapsack.cpp; sourceTree = SOURCE_ROOT; };
+		905D643411B945B7BFAE0F23 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hashcode.h; path = lib/StanfordCPPLib/collections/hashcode.h; sourceTree = SOURCE_ROOT; };
+		930E147E49184CA9B32DF6B0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtypes.cpp; path = lib/StanfordCPPLib/graphics/gtypes.cpp; sourceTree = SOURCE_ROOT; };
+		93CAD0778CFD40C6BF7AA850 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = filelib.cpp; path = lib/StanfordCPPLib/io/filelib.cpp; sourceTree = SOURCE_ROOT; };
+		969C548452884DACA03C95AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = recursion.cpp; path = lib/StanfordCPPLib/util/recursion.cpp; sourceTree = SOURCE_ROOT; };
+		9888A45A26B1494C9FF8086D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9A2BD16B4E234D2CAC5C2B94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = goptionpane.h; path = lib/StanfordCPPLib/graphics/goptionpane.h; sourceTree = SOURCE_ROOT; };
+		9AB097A0F8024917851E4A7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gtextarea.h; path = lib/StanfordCPPLib/graphics/gtextarea.h; sourceTree = SOURCE_ROOT; };
+		9ADA7B2943084DE991358723 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = simpio.cpp; path = lib/StanfordCPPLib/io/simpio.cpp; sourceTree = SOURCE_ROOT; };
+		9BEB6B0CA7BD49CF81465B3B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = goptionpane.cpp; path = lib/StanfordCPPLib/graphics/goptionpane.cpp; sourceTree = SOURCE_ROOT; };
+		9E7C8DECE32940E78D50BB7D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/echoinputstreambuf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = echoinputstreambuf.h; path = lib/StanfordCPPLib/private/echoinputstreambuf.h; sourceTree = SOURCE_ROOT; };
+		A4EE704306184563BDB96727 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sound.h; path = lib/StanfordCPPLib/util/sound.h; sourceTree = SOURCE_ROOT; };
+		A52BF66A7DC24A7AAC53D160 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cpp; path = lib/StanfordCPPLib/util/timer.cpp; sourceTree = SOURCE_ROOT; };
+		A5977279A48D4A44AD253390 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ginteractors.h; path = lib/StanfordCPPLib/graphics/ginteractors.h; sourceTree = SOURCE_ROOT; };
+		A61EA5760A8D470F8F21EC3C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lexicon.cpp; path = lib/StanfordCPPLib/collections/lexicon.cpp; sourceTree = SOURCE_ROOT; };
+		A7EE2449ED5C402E86E27907 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtimer.cpp; path = lib/StanfordCPPLib/graphics/gtimer.cpp; sourceTree = SOURCE_ROOT; };
+		A83D961319A74875977593D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = linkedhashmap.h; path = lib/StanfordCPPLib/collections/linkedhashmap.h; sourceTree = SOURCE_ROOT; };
+		A87AF2DCA4714898AACCF98A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = simpio.h; path = lib/StanfordCPPLib/io/simpio.h; sourceTree = SOURCE_ROOT; };
+		A9592E638784470985B6D86C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dawglexicon.cpp; path = lib/StanfordCPPLib/collections/dawglexicon.cpp; sourceTree = SOURCE_ROOT; };
+		AB91A730A1F54AF2AAE5B5E7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/consolestreambuf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = consolestreambuf.h; path = lib/StanfordCPPLib/private/consolestreambuf.h; sourceTree = SOURCE_ROOT; };
+		AF294F18F4F34822A3A499E0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AF7F969B19964885A7412B54 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/sparsegrid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sparsegrid.h; path = lib/StanfordCPPLib/collections/sparsegrid.h; sourceTree = SOURCE_ROOT; };
+		B417B57F134D4F29A7285C4D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/limitoutputstreambuf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = limitoutputstreambuf.h; path = lib/StanfordCPPLib/private/limitoutputstreambuf.h; sourceTree = SOURCE_ROOT; };
+		BCD1785D1398479494C88EF7 /* stanford */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libstanford.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF383E7D6A264BA1B0D685AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/foreach.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = foreach.h; path = lib/StanfordCPPLib/util/foreach.h; sourceTree = SOURCE_ROOT; };
+		BFEC22FD39E94EB880FD4012 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gbufferedimage.cpp; path = lib/StanfordCPPLib/graphics/gbufferedimage.cpp; sourceTree = SOURCE_ROOT; };
+		C008420EC38D45CC82EC96BD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = urlstream.cpp; path = lib/StanfordCPPLib/io/urlstream.cpp; sourceTree = SOURCE_ROOT; };
+		C13F27EF5A4B490C9EE99DA3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gwindow.cpp; path = lib/StanfordCPPLib/graphics/gwindow.cpp; sourceTree = SOURCE_ROOT; };
+		C707D23C894D4E16811C0FC2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = plainconsole.cpp; path = lib/StanfordCPPLib/io/plainconsole.cpp; sourceTree = SOURCE_ROOT; };
+		C90CC381D4D44A90B7ACB377 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = server.h; path = lib/StanfordCPPLib/io/server.h; sourceTree = SOURCE_ROOT; };
+		CAB99DD63A034DC39CFA3BC7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = plainconsole.h; path = lib/StanfordCPPLib/io/plainconsole.h; sourceTree = SOURCE_ROOT; };
+		CCD86BE8592A4C71BAF9566C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = recursion.h; path = lib/StanfordCPPLib/util/recursion.h; sourceTree = SOURCE_ROOT; };
+		D0FCC9F06D724688B0251BE9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtextarea.cpp; path = lib/StanfordCPPLib/graphics/gtextarea.cpp; sourceTree = SOURCE_ROOT; };
+		D36CA66EF5164DC0B52FF9AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = call_stack.h; path = lib/StanfordCPPLib/system/call_stack.h; sourceTree = SOURCE_ROOT; };
+		D402D8D8E48E4B06ABB1D030 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tplatform.h; path = lib/StanfordCPPLib/private/tplatform.h; sourceTree = SOURCE_ROOT; };
+		D4EF88E4F11A4A3EB18C11FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/deque.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = deque.h; path = lib/StanfordCPPLib/collections/deque.h; sourceTree = SOURCE_ROOT; };
+		D5807354FFD94767A1A2E8BC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = point.h; path = lib/StanfordCPPLib/util/point.h; sourceTree = SOURCE_ROOT; };
+		D730A16AFC0A4075BFF24382 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stl.h; path = lib/StanfordCPPLib/collections/stl.h; sourceTree = SOURCE_ROOT; };
+		D9858337890842C4B5529889 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base64.h; path = lib/StanfordCPPLib/io/base64.h; sourceTree = SOURCE_ROOT; };
+		DA351978BAA64EFA8BABCF7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = platform.cpp; path = lib/StanfordCPPLib/private/platform.cpp; sourceTree = SOURCE_ROOT; };
+		DCA663E0B29045F2A119A7C2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = note.h; path = lib/StanfordCPPLib/util/note.h; sourceTree = SOURCE_ROOT; };
+		DCA6746D1D884DEE8AEF3BDF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console.cpp; path = lib/StanfordCPPLib/io/console.cpp; sourceTree = SOURCE_ROOT; };
+		E06CBB8123794285B5FF376E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lexicon.h; path = lib/StanfordCPPLib/collections/lexicon.h; sourceTree = SOURCE_ROOT; };
+		E0914FB1D71C4FF2BDBD2A64 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = observable.h; path = lib/StanfordCPPLib/util/observable.h; sourceTree = SOURCE_ROOT; };
+		E3F9ED96504D484D9E1D84E5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/randompatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = randompatch.h; path = lib/StanfordCPPLib/private/randompatch.h; sourceTree = SOURCE_ROOT; };
+		ECCFC39210A7447C97459853 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmath.cpp; path = lib/StanfordCPPLib/util/gmath.cpp; sourceTree = SOURCE_ROOT; };
+		EDDF1BA4C9F0477D9646DEFC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = error.cpp; path = lib/StanfordCPPLib/system/error.cpp; sourceTree = SOURCE_ROOT; };
+		EFF4FBF142DD412D81E346A5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gwindow.h; path = lib/StanfordCPPLib/graphics/gwindow.h; sourceTree = SOURCE_ROOT; };
+		F4DAE77E0B33464B930D761E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/forwardingstreambuf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = forwardingstreambuf.h; path = lib/StanfordCPPLib/private/forwardingstreambuf.h; sourceTree = SOURCE_ROOT; };
+		F9985A0CC67C45C7B183BB4F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bitstream.cpp; path = lib/StanfordCPPLib/io/bitstream.cpp; sourceTree = SOURCE_ROOT; };
+		FCC01E7F11F74C2FB037D824 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gtypes.h; path = lib/StanfordCPPLib/graphics/gtypes.h; sourceTree = SOURCE_ROOT; };
+		FD3639D119894C5A96326015 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = basicgraph.h; path = lib/StanfordCPPLib/collections/basicgraph.h; sourceTree = SOURCE_ROOT; };
+		FE37A0557898471DB443E534 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/grid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = grid.h; path = lib/StanfordCPPLib/collections/grid.h; sourceTree = SOURCE_ROOT; };
+		FF860206E9CC42B4A5E40B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gfilechooser.h; path = lib/StanfordCPPLib/graphics/gfilechooser.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DD3F67F39B24A73AE83A65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F242E7794C492291AD092D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D2C884393AF4BC6A9E2AEC0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		269622AB284E481482B89F62 /* stanford */ = {
+			isa = PBXGroup;
+			children = (
+				2F2C040AA3CF4859B4935AAE /* Source Files */,
+				3883712B9B5A47D0B46A2436 /* Header Files */,
+				AF294F18F4F34822A3A499E0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */,
+			);
+			name = stanford;
+			sourceTree = "<group>";
+		};
+		2D16A8E61742483E985372F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F2C040AA3CF4859B4935AAE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FC195EE304E20B581EF15 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.cpp */,
+				A9592E638784470985B6D86C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.cpp */,
+				2A45A9F1C2C64052B45C3C1C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.cpp */,
+				A61EA5760A8D470F8F21EC3C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.cpp */,
+				3121F4A2B9A544E8886A7344 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.cpp */,
+				BFEC22FD39E94EB880FD4012 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.cpp */,
+				3DCF20A2FF4045E18B2CE96C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.cpp */,
+				24FB04E891154A4F94D3DDF3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.cpp */,
+				6A88F7FD18D042248EB13DE3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.cpp */,
+				0BCCF1D7142B4FF9B2FB1427 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.cpp */,
+				9BEB6B0CA7BD49CF81465B3B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.cpp */,
+				4BCA51A9A0354FB58EAE0A62 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.cpp */,
+				D0FCC9F06D724688B0251BE9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.cpp */,
+				A7EE2449ED5C402E86E27907 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.cpp */,
+				930E147E49184CA9B32DF6B0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.cpp */,
+				C13F27EF5A4B490C9EE99DA3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.cpp */,
+				683293FC7B86458B871F6B6A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.cpp */,
+				F9985A0CC67C45C7B183BB4F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.cpp */,
+				DCA6746D1D884DEE8AEF3BDF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.cpp */,
+				93CAD0778CFD40C6BF7AA850 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.cpp */,
+				C707D23C894D4E16811C0FC2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.cpp */,
+				3AAE6480D76447A0838A8A9B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.cpp */,
+				9ADA7B2943084DE991358723 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.cpp */,
+				44456AF15F854D9A93CA6F18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.cpp */,
+				C008420EC38D45CC82EC96BD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.cpp */,
+				DA351978BAA64EFA8BABCF7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.cpp */,
+				5052A305EB9D4E858EF0320B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.cpp */,
+				7B0042955616449E8EFE0DD7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_gcc.cpp */,
+				14D5C3C72BC2449D8CCDC9D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_windows.cpp */,
+				EDDF1BA4C9F0477D9646DEFC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.cpp */,
+				16DCD4839BD948308BFF76DB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.cpp */,
+				58FE391B5B3B46649EB378F9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.cpp */,
+				ECCFC39210A7447C97459853 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.cpp */,
+				4249B0259962472D9D1A1C41 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.cpp */,
+				55A650E5366C4C52813DCB98 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.cpp */,
+				10F24091CE90424EBBB3CB39 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.cpp */,
+				6499E13435C949E08A279DBF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.cpp */,
+				969C548452884DACA03C95AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.cpp */,
+				0403947500464850B4B62ED7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.cpp */,
+				8A17C85F224B481FBDE5D114 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.cpp */,
+				7BF3DADD204648368808EB05 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.cpp */,
+				A52BF66A7DC24A7AAC53D160 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3883712B9B5A47D0B46A2436 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD3639D119894C5A96326015 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.h */,
+				01429444E4EB4414BED130B8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/collections.h */,
+				41C00DC31FCC4AE5BF666A2C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.h */,
+				D4EF88E4F11A4A3EB18C11FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/deque.h */,
+				6CACF004271644D0898734FE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/graph.h */,
+				FE37A0557898471DB443E534 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/grid.h */,
+				905D643411B945B7BFAE0F23 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.h */,
+				22BCFAE408A945438390E199 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashmap.h */,
+				33FA6F2C083345ACA6A24B02 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashset.h */,
+				E06CBB8123794285B5FF376E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.h */,
+				A83D961319A74875977593D9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashmap.h */,
+				22DDDC134B9741418B0A7FAB /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedhashset.h */,
+				1CE4169269EA4D6C95065902 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/linkedlist.h */,
+				0878213E0F764D42B97C5879 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/map.h */,
+				6816B1C7BBE845848A3D864C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/pqueue.h */,
+				772FA107BD414AD7AE6E2D0A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/priorityqueue.h */,
+				2C1CBC0F287E4E479E8C04DD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/queue.h */,
+				112AF7D27C40486191EAA536 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/set.h */,
+				24A5D765DAF44C01ACF7A4A8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.h */,
+				AF7F969B19964885A7412B54 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/sparsegrid.h */,
+				1833E05EB7A444DD8DAFC786 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stack.h */,
+				D730A16AFC0A4075BFF24382 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/stl.h */,
+				842430913DFB4599B4D9CC5F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/vector.h */,
+				5FE67EE672684B1F9CABD503 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.h */,
+				50D12A0E5E264ABC87AB0C18 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.h */,
+				FF860206E9CC42B4A5E40B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.h */,
+				A5977279A48D4A44AD253390 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.h */,
+				0BF0885E3CF14CD2A81171AF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.h */,
+				9A2BD16B4E234D2CAC5C2B94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.h */,
+				5BFB609510E34875A5B1AD7A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.h */,
+				9AB097A0F8024917851E4A7E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.h */,
+				5BDDA607BA924905A01B36AA /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.h */,
+				FCC01E7F11F74C2FB037D824 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.h */,
+				EFF4FBF142DD412D81E346A5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.h */,
+				D9858337890842C4B5529889 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.h */,
+				5C1AD30DD04B485FA44C6AA5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.h */,
+				023B0EE3B248418786FAA0A9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.h */,
+				751C87A7FD4E47B78A77D25F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.h */,
+				CAB99DD63A034DC39CFA3BC7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.h */,
+				C90CC381D4D44A90B7ACB377 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.h */,
+				A87AF2DCA4714898AACCF98A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.h */,
+				3890FF9401104B27BBC714BF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.h */,
+				23CDB77D20CD448C93F4267E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.h */,
+				AB91A730A1F54AF2AAE5B5E7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/consolestreambuf.h */,
+				9E7C8DECE32940E78D50BB7D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/echoinputstreambuf.h */,
+				16D764EAFE664B9F8C43CFB7 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/foreachpatch.h */,
+				F4DAE77E0B33464B930D761E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/forwardingstreambuf.h */,
+				59A39B8F4BD04466BA954A49 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/init.h */,
+				B417B57F134D4F29A7285C4D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/limitoutputstreambuf.h */,
+				7693D346BA7C4405BA737DD1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.h */,
+				E3F9ED96504D484D9E1D84E5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/randompatch.h */,
+				21DACFEBE74A4708BA1EAA5E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/static.h */,
+				19910291CDA24A69B1E6A2D4 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tokenpatch.h */,
+				D402D8D8E48E4B06ABB1D030 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/tplatform.h */,
+				75DEE3ADA7C54F11B7ED6EF1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.h */,
+				D36CA66EF5164DC0B52FF9AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack.h */,
+				4CA6E53DDEE542CBAA1F6929 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.h */,
+				4B85730C6EEE4C4E9FE5633A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.h */,
+				7CC13E8E561B489298D9F6C9 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/stack_exception.h */,
+				78EBF80FCFA34ABA87B653D3 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.h */,
+				BF383E7D6A264BA1B0D685AE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/foreach.h */,
+				1AE7C822EFCE4D28B78C342B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.h */,
+				DCA663E0B29045F2A119A7C2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.h */,
+				E0914FB1D71C4FF2BDBD2A64 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.h */,
+				D5807354FFD94767A1A2E8BC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.h */,
+				4E442577C67842339EE735DE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.h */,
+				CCD86BE8592A4C71BAF9566C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.h */,
+				6FBBAB00115340A5A9BAE22F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.h */,
+				A4EE704306184563BDB96727 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.h */,
+				52CBD732E3DD45268CF16B28 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.h */,
+				58CC7FB35644425B91190412 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		66E11C0637A74C9D8466766E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F8AE0F981BA4191A9AB94AC /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/src/knapsack.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8787280ECD474C3990AFBE55 = {
+			isa = PBXGroup;
+			children = (
+				269622AB284E481482B89F62 /* stanford */,
+				DB7A791840114CD5B6695F45 /* app */,
+				FB769333A2B04AA9BF37782C /* ALL_BUILD */,
+				BDF494085C534AE2BAA9D5D1 /* Products */,
+				2D16A8E61742483E985372F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF494085C534AE2BAA9D5D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				461B6381948E4D46BE2BBC21 /* app */,
+				BCD1785D1398479494C88EF7 /* stanford */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB7A791840114CD5B6695F45 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				66E11C0637A74C9D8466766E /* Source Files */,
+				8B5C774D71A347508B20C7FF /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		FB769333A2B04AA9BF37782C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C884393AF4BC6A9E2AEC0 /* CMake Rules */,
+				9888A45A26B1494C9FF8086D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EF1A74E43524DD0B832F098 /* stanford */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCEE829F8EC4EF1B648A71F /* Build configuration list for PBXNativeTarget "stanford" */;
+			buildPhases = (
+				F099782839954AA8AC634C27 /* Sources */,
+				0DD3F67F39B24A73AE83A65B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48EFD01494A849BDA8086193 /* PBXTargetDependency */,
+			);
+			name = stanford;
+			productName = stanford;
+			productReference = BCD1785D1398479494C88EF7 /* stanford */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C460D05EDB3C44EB8A132E8B /* app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949A60E516C848A4A0D1C6A8 /* Build configuration list for PBXNativeTarget "app" */;
+			buildPhases = (
+				2C4331061E23478B91172A67 /* Sources */,
+				89F242E7794C492291AD092D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40015E6906C64AC9A66A07E0 /* PBXTargetDependency */,
+				DEF8C7C9D12E41DA8A83F93B /* PBXTargetDependency */,
+			);
+			name = app;
+			productName = app;
+			productReference = 461B6381948E4D46BE2BBC21 /* app */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8717EC83895941E6BFBA4AE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = DFB6AB8B07D04A69AB7AC344 /* Build configuration list for PBXProject "app" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7EE4D29495F6452CB2946CCF /* Debug */,
+				8BB04C28062F4AA5AC6439F0 /* Release */,
+				621F216115BD4E2B905CCCB3 /* MinSizeRel */,
+				CC8D80EB858E4C0B8AED9F33 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8787280ECD474C3990AFBE55;
+			projectDirPath = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template;
+			projectRoot = "";
+			targets = (
+				B2C70CFF70D94F84AD1F117B /* ALL_BUILD */,
+				87688200B77946D6BDC858C1 /* ZERO_CHECK */,
+				C460D05EDB3C44EB8A132E8B /* app */,
+				0EF1A74E43524DD0B832F098 /* stanford */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09A4DE152A69464193716164 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  make -f /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  make -f /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  make -f /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  make -f /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B2CA7E77F4202EFD7ABC078D /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4331061E23478B91172A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD270DA7AF8F492ABDE2E8B2 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/src/knapsack.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F099782839954AA8AC634C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA55752017D842E9BFD4DAD6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/basicgraph.cpp */,
+				C1DF1BC427F74DAA8A001F94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/dawglexicon.cpp */,
+				BBCFB9BEA4ED48C385B1F497 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/hashcode.cpp */,
+				621429A3507F4B9F9CF7BD74 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/lexicon.cpp */,
+				1EE704482EFB4C6F9ABE739C /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/collections/shuffle.cpp */,
+				76C185A25BBF44EABA9CCB76 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gbufferedimage.cpp */,
+				D589119BD91446F4925293F6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gevents.cpp */,
+				B211D24A9E954C6AA934D4DD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gfilechooser.cpp */,
+				ABFAD95E6AA647EC971D4951 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/ginteractors.cpp */,
+				113844C58CFE49B9BB213C20 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gobjects.cpp */,
+				BC6044E0540342AB97E2A993 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/goptionpane.cpp */,
+				51F5D47660AF443884F7C858 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtable.cpp */,
+				D9BE5BBB79DA4F519B3DE16D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtextarea.cpp */,
+				7D100EBC7C874B05BBD96814 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtimer.cpp */,
+				2BA69BAE8DCC4768A5BCB727 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gtypes.cpp */,
+				EFE8EBCD99DE4FA09BB8AA08 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/graphics/gwindow.cpp */,
+				CE4FF1FE91434336A889BFB0 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/base64.cpp */,
+				9E280809307843239EF61136 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/bitstream.cpp */,
+				E65F31A1289C49E0AA6816D5 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/console.cpp */,
+				F9162D17A495422D998E5EAD /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/filelib.cpp */,
+				B08399A45E094EDE8A261B94 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/plainconsole.cpp */,
+				4112DE46303E4782953B295F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/server.cpp */,
+				5541E68D27014EC6B7A6842D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/simpio.cpp */,
+				C971452D377146DAB6A07DD8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/tokenscanner.cpp */,
+				6C59EF4D701E49AC9329CA4D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/io/urlstream.cpp */,
+				91AE41F63631477C80D92DA6 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/platform.cpp */,
+				C0A43C1608BA41ACA7BFB876 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/private/version.cpp */,
+				3BFB0448FFD34E3897F3F043 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_gcc.cpp */,
+				7FD05195A2534BF792C7661B /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/call_stack_windows.cpp */,
+				8194127D09DC45508738680E /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/error.cpp */,
+				15DF5085CBF04FEF9B5920A1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/system/exceptions.cpp */,
+				A09C3D35E0294CB5895592C1 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/direction.cpp */,
+				901C5563EDF3402085804B20 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/gmath.cpp */,
+				73BAB25270474EF7A40C6F48 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/note.cpp */,
+				6B9C6425B5D7431E8D6ED5A8 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/observable.cpp */,
+				7A90E6A3A25D48F99E7FC74F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/point.cpp */,
+				F180B760CCAB4D3FA43F5505 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/random.cpp */,
+				0288C7462D3A4F07911D242F /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/recursion.cpp */,
+				C83CE3C34D8146D8AA6BEC25 /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/regexpr.cpp */,
+				0C7B3777C5B74EB5ABAAFD0A /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/sound.cpp */,
+				B8F5EC269BAF4066B1A3304D /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/strlib.cpp */,
+				C8ED2D19AC6F42728AB25DAE /* /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib/util/timer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40015E6906C64AC9A66A07E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF1A74E43524DD0B832F098 /* stanford */;
+			targetProxy = A69FA10D8AD04B3998843C2C /* PBXContainerItemProxy */;
+		};
+		4068A89F8387436DB31776F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C460D05EDB3C44EB8A132E8B /* app */;
+			targetProxy = E292DA6C89ED4424918A8D80 /* PBXContainerItemProxy */;
+		};
+		48EFD01494A849BDA8086193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87688200B77946D6BDC858C1 /* ZERO_CHECK */;
+			targetProxy = 540530CD14FD4049AF983032 /* PBXContainerItemProxy */;
+		};
+		79BDF610D497484FB3BB5575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EF1A74E43524DD0B832F098 /* stanford */;
+			targetProxy = 837A9848ACAB4EF791C74AB3 /* PBXContainerItemProxy */;
+		};
+		7B42937D1D5240E89538ACE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87688200B77946D6BDC858C1 /* ZERO_CHECK */;
+			targetProxy = DA91B717919C4206A6A82DA0 /* PBXContainerItemProxy */;
+		};
+		DEF8C7C9D12E41DA8A83F93B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87688200B77946D6BDC858C1 /* ZERO_CHECK */;
+			targetProxy = 63B4A3D10F1D4A00A13D2DAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05A2C11507174FD5BCC5CE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/build;
+			};
+			name = Debug;
+		};
+		21F57BE474714422897EF439 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread     -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stanford;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		36C21F03D86042E2B3658D72 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/build;
+			};
+			name = RelWithDebInfo;
+		};
+		39826D72D7E6461FA104EB9C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4E03D53772C044A897A5F4D6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread     -DNDEBUG '-fsanitize=undefined' -Wall -Wextra '-std=gnu++17' ";
+				OTHER_LDFLAGS = ("'-fsanitize=undefined' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/MinSizeRel/libstanford.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = app;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		51CA3102B55A418992FBABAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		639D0246FDB14AAD8C17F790 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		67FA0EC494464A3DBB174B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/build;
+			};
+			name = Release;
+		};
+		7D6F59BCC145439FB3DD1F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread     -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stanford;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A3AB6CB0974045F2A74F1265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread    '-fsanitize=undefined' -Wall -Wextra '-std=gnu++17' ";
+				OTHER_LDFLAGS = ("'-fsanitize=undefined' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/Debug/libstanford.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = app;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A5B71472A2B04BC48353D362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread     -DNDEBUG '-fsanitize=undefined' -Wall -Wextra '-std=gnu++17' ";
+				OTHER_LDFLAGS = ("'-fsanitize=undefined' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/Release/libstanford.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = app;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B4C80AC817ED456DB969BDA1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BA4C7480E8BD417EA81B10E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C3550E407C644E80894E62A7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D061C76A715A4D07AA1EBC71 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread        -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stanford;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D372EDD9E5334B9BB5196FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D5CC9A3CA7E440DCBBC0F685 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/build;
+			};
+			name = MinSizeRel;
+		};
+		E51B3F3560D54369AAD53074 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread        -DNDEBUG '-fsanitize=undefined' -Wall -Wextra '-std=gnu++17' ";
+				OTHER_LDFLAGS = ("'-fsanitize=undefined' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild/RelWithDebInfo/libstanford.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = app;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EA69516E66184E8D90A78E57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F5422A00669B4D3591EBEEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/lib/StanfordCPPLib,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -ldl -lpthread    '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stanford;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bryant/Programming/cs106b/recap/backtrack/cmake_template/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E5363E4C8A4B89802D0F34 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D372EDD9E5334B9BB5196FA3 /* Debug */,
+				BA4C7480E8BD417EA81B10E2 /* Release */,
+				C3550E407C644E80894E62A7 /* MinSizeRel */,
+				39826D72D7E6461FA104EB9C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		949A60E516C848A4A0D1C6A8 /* Build configuration list for PBXNativeTarget "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3AB6CB0974045F2A74F1265 /* Debug */,
+				A5B71472A2B04BC48353D362 /* Release */,
+				4E03D53772C044A897A5F4D6 /* MinSizeRel */,
+				E51B3F3560D54369AAD53074 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BCEE829F8EC4EF1B648A71F /* Build configuration list for PBXNativeTarget "stanford" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5422A00669B4D3591EBEEFF /* Debug */,
+				7D6F59BCC145439FB3DD1F87 /* Release */,
+				21F57BE474714422897EF439 /* MinSizeRel */,
+				D061C76A715A4D07AA1EBC71 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DFB6AB8B07D04A69AB7AC344 /* Build configuration list for PBXProject "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A2C11507174FD5BCC5CE11 /* Debug */,
+				67FA0EC494464A3DBB174B02 /* Release */,
+				D5CC9A3CA7E440DCBBC0F685 /* MinSizeRel */,
+				36C21F03D86042E2B3658D72 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5182ABFD58145ABB316E928 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA69516E66184E8D90A78E57 /* Debug */,
+				51CA3102B55A418992FBABAA /* Release */,
+				B4C80AC817ED456DB969BDA1 /* MinSizeRel */,
+				639D0246FDB14AAD8C17F790 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8717EC83895941E6BFBA4AE3 /* Project object */;
+}

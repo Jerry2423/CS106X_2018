@@ -144,6 +144,7 @@ bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
  * @return Whether the two strands are within that edit distance of one another.
  */
 
+//assumption: the word part of w1 and w2 before pos is the same 
 int editDistance(string& w1, const string w2, int pos, map<string, int>& catche) {
     // call_times++;
     if (catche.find(w1) != catche.end()) {
@@ -152,20 +153,20 @@ int editDistance(string& w1, const string w2, int pos, map<string, int>& catche)
     //base case
     if (pos == w1.size() && pos == w2.size()) {
         return 0;
-    } else if (pos == w1.size() && pos < w2.size()) {
+    } else if (pos == w1.size() && pos < w2.size()) {     //case one: pos = w1.s && i < w2.s: append only
         w1.push_back(w2[pos]);
         int times = 1 + editDistance(w1, w2, pos+1, catche);
         w1.pop_back();
         catche[w1] = times;
         return times;
-    } else if (pos == w2.size() && pos < w1.size()) {
+    } else if (pos == w2.size() && pos < w1.size()) {    //case two: pos = w2.s && pos < w1.s del only
         char ch = w1[pos];
         w1.erase(w1.begin()+pos);
         int times = 1+ editDistance(w1, w2, pos, catche);
         w1.insert(w1.begin()+pos, ch);
         catche[w1] = times;
         return times;
-    } else {
+    } else {    //normal case pos < w1.s && i < s2.s
         int ans;
         if (w1[pos] == w2[pos]) {
             ans = editDistance(w1, w2, pos+1, catche);
@@ -173,7 +174,7 @@ int editDistance(string& w1, const string w2, int pos, map<string, int>& catche)
             //insert: pos+1
             //choose explore unchoose
             w1.insert(w1.begin()+pos, w2[pos]);
-            ans = 1+editDistance(w1, w2, pos+1, catche);
+            ans = 1+editDistance(w1, w2, pos+1, catche); // don't forget +1 to record the operation in the current step
             w1.erase(w1.begin()+pos);
             //del
             char ch = w1[pos];
@@ -188,11 +189,8 @@ int editDistance(string& w1, const string w2, int pos, map<string, int>& catche)
         catche[w1] = ans;
         return ans;
     }
-    //case one: pos = w1.s && i < w2.s: append only
 
-    //case two: pos = w2.s && pos < w1.s del only
 
-    //normal case pos < w1.s && i < s2.s
 }
 
 bool approximatelyMatch(const string& one, const string& two, int maxDistance) {
