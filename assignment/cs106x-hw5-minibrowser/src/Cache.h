@@ -1,6 +1,8 @@
 #pragma once
 
+#include "hashmap.h"
 #include <string>
+using std::string;
 
 /**
  * A type representing a cache. This class works similarly to the Map interface, except that
@@ -80,7 +82,18 @@ private:
         Node*       next;
     };
 
+    Node* front;
+    Node* end;
+    int maxSize;
+    int currSize;
+    HashMap<string, Node*> info;
+
     // TODO: add any helper functions and instance variables you need
+    void delete_from(Node*& curr);
+    void pop_front();
+    bool empty() const;
+    void push_back(const string& key, const ValueType& value);
+    void move_end(Node* ptr);
 
 };
 
