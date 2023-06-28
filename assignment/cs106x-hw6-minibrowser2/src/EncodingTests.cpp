@@ -1,4 +1,6 @@
 #include "EncodingTests.h"
+#include "TestDriver.h"
+#include "bitstream.h"
 #include "encoding.h"
 #include "huffmanutil.h"
 #include <sstream>
@@ -38,8 +40,20 @@ ADD_TEST("Encode data for one letter file") {
     encodeData(encodeInput, root, out);
 
     /* We can use bitsToBytes in huffmanutil.h to convert the compressed bits to actual 1 and 0 characters. */
+    // cout << bitsToBytes(out.str()) << endl;
     expect(bitsToBytes(out.str()) == "01000000");
 
+    freeTree(root);
+}
+
+ADD_TEST("Encode data for multiple letters") {
+    istringstream treeInput("ab ab cab");
+    auto root = buildEncodingTree(treeInput);
+    istringstream encodeInput("ab ab cab");
+    ostringbitstream out;
+    encodeData(encodeInput, root, out);
+    // cout << bitsToBytes(out.str()) << endl;
+    expect(bitsToBytes(out.str()) == "101100101100010101101100");
     freeTree(root);
 }
 
@@ -57,6 +71,16 @@ ADD_TEST("Decode data for one letter file") {
     freeTree(root);
 }
 
+ADD_TEST("Decode data for multiple letters") {
+    istringstream treeInput("ab ab cab");
+    auto root = buildEncodingTree(treeInput);
+    istringbitstream encodeInput(bytesToBits("101100101100010101101100"));
+    ostringstream out;
+    decodeData(encodeInput, root, out);
+    // cout << bitsToBytes(out.str()) << endl;
+    expect((out.str()) == "ab ab cab");
+    freeTree(root);
+}
 /* Compressing and decompressing a one-letter file should yield the identical text. */
 ADD_TEST("Compress/uncompress for one letter file") {
     istringstream input("c");
@@ -68,10 +92,33 @@ ADD_TEST("Compress/uncompress for one letter file") {
     expect(output.str() == "c");
 }
 
+ADD_TEST("Compress/uncompress for multiple letter file") {
+    istringstream input("ab ab cab");
+    ostringbitstream bitOutput;
+    compress(input, bitOutput);
+    istringbitstream bitInput(bitOutput.str());
+    ostringstream output;
+    uncompress(bitInput, output);
+    expect(output.str() == "ab ab cab");
+}
 /* After compressing and decompressing a one letter file, all HuffmanNodes should be gone. */
 ADD_TEST("All memory should be freed for a one letter file") {
     HuffmanNode::resetCreatedDeletedCounts();
     istringstream input("c");
+    ostringbitstream bitOutput;
+    compress(input, bitOutput);
+    istringbitstream bitInput(bitOutput.str());
+    ostringstream output;
+    uncompress(bitInput, output);
+
+    /* We can use HuffmanNode's built in counting to track how many nodes are created and deleted.
+     * Check out huffmannode.h for more information! */
+    expect(!HuffmanNode::hasNodesStillCreated());
+}
+
+ADD_TEST("All memory should be freed for a multiple letter file") {
+    HuffmanNode::resetCreatedDeletedCounts();
+    istringstream input("ab ab cab");
     ostringbitstream bitOutput;
     compress(input, bitOutput);
     istringbitstream bitInput(bitOutput.str());
