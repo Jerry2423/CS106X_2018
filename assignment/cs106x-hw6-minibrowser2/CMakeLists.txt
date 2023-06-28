@@ -48,6 +48,9 @@ link_libraries(stanford)
 
 add_executable(app ${app_SOURCES})
 
+target_compile_options(app PRIVATE -fsanitize=address -Wall -Wextra)
+target_link_options(app PRIVATE -fsanitize=address)
+
 # copy the java spl.jar to the buiding directory
 file(COPY lib/spl.jar DESTINATION "${CMAKE_BINARY_DIR}")
 

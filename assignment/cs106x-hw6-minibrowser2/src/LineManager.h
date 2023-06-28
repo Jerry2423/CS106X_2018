@@ -78,7 +78,7 @@ private:
     // TODO: add any helper functions and instance variables you need
     Node* root;
     void add_vec(const Vector<Line*>& v, Node*& curr);
-    void clear_from(Node*& curr);
+    void clear_from(Node* curr);
     double getMax(Node* curr) const;
     void linesInRangeHelper(Node* curr, Vector<Line*>& result, double lowY, double highY) const;
     Line* lineAtHelper(double y, Node* curr) const;

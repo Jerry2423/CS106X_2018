@@ -12,6 +12,7 @@ LineManager::LineManager(const Vector<Line *>& lines) {
 LineManager::~LineManager() {
     /* TODO: Delete this line and implement this member function. */
     clear_from(root);
+    root = nullptr;
 }
 
 double LineManager::contentHeight() const {
@@ -33,6 +34,7 @@ Line* LineManager::lineAt(double y) const {
 
 void LineManager::add_vec(const Vector<Line*>& v, Node*& curr) {
     if (v.isEmpty()) {
+        curr = nullptr; // avoid dangling ptr!
         return;
     } else {
         // add the middle element
@@ -43,12 +45,13 @@ void LineManager::add_vec(const Vector<Line*>& v, Node*& curr) {
     }
 }
 
-void LineManager::clear_from(Node*& curr) {
-    if (curr) {
+void LineManager::clear_from(Node* curr) {
+    if (!curr) {
+        return;
+    } else {
         clear_from(curr->left);
         clear_from(curr->right);
         delete curr;
-        curr = nullptr;
     }
 }
 
