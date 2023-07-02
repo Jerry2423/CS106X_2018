@@ -2,6 +2,8 @@
 
 
 
+[Geeks for Geeks Readings](https://www.geeksforgeeks.org/graph-and-its-representations/)
+
 [Reference (used in the `graph.h`)](https://stackoverflow.com/questions/23997104/priority-queue-with-pointers-and-comparator-c)
 
 [Design for Competitive Programming1](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)
