@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(main)
+set(CMAKE_CXX_STANDARD 17)
+add_subdirectory(basic_graph)
+add_executable(main main.cpp)
+target_link_libraries(main graph)
+target_include_directories(main PUBLIC basic_graph)
