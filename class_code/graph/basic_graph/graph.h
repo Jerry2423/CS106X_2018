@@ -312,6 +312,7 @@ void Graph::minimumEdgePath(const name_type &start, const name_type &end) {
     to_do.push(info[start]);
     while (!to_do.empty()) {
         auto front = to_do.front();
+        // it's okay to delete the following statement, just used for removing duplication
         if (front->visited) {
             to_do.pop();
             continue;

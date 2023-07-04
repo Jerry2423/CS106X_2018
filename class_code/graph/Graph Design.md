@@ -73,7 +73,9 @@ Dijkstra算法里面，*够不着，无穷大的点*没必要放到todo-list里�
 - 前半句：往里面添加元素的时候只添加unvisited的
 - 后边句：从里面pop元素的时候还要检查这个元素是否visited：如果是，直接pop然后啥也不做；否，继续后续操作
 
-- 原因：比如node0与node3相邻；node1与node3也相邻，先visit node0，此时queue为`{1,..., 3, ...}`，后续visit node1，因为此时node3仍然是标记为unvisited，node3**被再次加入queue**：`{..., 3, ..., 3}`，这样node3就重复了2次，当第一个node3被visited之后，还有一个重复的node3在里面，当该node3被pop时候，因为已经被visited了，就不要做后续的重复操作了
+- 原因：比如node0与node3相邻；node1与node3也相邻，先visit node0，此时queue为`{1,..., 3, ...}`，后续visit node1，因为此时node3仍然是标记为unvisited，node3**被再次加入queue**：`{..., 3, ..., 3}`，这样node3就重复了2次，当第一个node3被visited之后，还有一个重复的node3在里面，当该node3被pop时候，因为已经被visited了，只需要pop掉，就不要做后续的重复操作了
+
+- 补充：调用pop的时候可以不检查是否visited：It’s okay to have duplicate elements in the queue. 重复visit已经visit过的点没关系，关键在于**首次visit**的相对顺序没有变：距离起始点长度为1的点的**首次visit**一定在长度为2的点的前面，因为长度为2更远的点一定是在长度为1的点**后面首次**加入queue的（induction）
 
 [BFS Implementation](https://www.youtube.com/watch?v=xlVX7dXLS64&ab_channel=Reducible)
 
