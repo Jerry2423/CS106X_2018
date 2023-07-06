@@ -7,6 +7,8 @@
 #include "queue.h"
 #include "set.h"
 #include "strlib.h"
+#include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -36,16 +38,44 @@ void CS106XCellModel::clear() {
         i->data = nullptr;
     }
     cellGraph.clear();
+    cache.clear();
 }
 
 void CS106XCellModel::load(istream& infile) {
     (void)infile;
-    // TODO: remove the above line and implement this
+    clear();
+    string s;
+    while (getline(infile, s)) {
+        istringstream info(s);
+        string cell_name, exp;
+        info >> cell_name >> exp;
+        toUpperCaseInPlace(cell_name);
+        Expression* exp_ptr = ExpressionParser::parseExpression(exp);
+        cellGraph.addVertex(cell_name);
+        cellGraph.getVertex(cell_name)->data = exp_ptr;
+
+        Set<EdgeV<Expression*>*> newEdges;
+        setDependency(exp_ptr, cell_name, newEdges);
+        if (containLoop(cell_name)) {
+            throw ErrorException("there is circular in the exp");
+        }
+    }
+
+    for (const auto& i : cellGraph.getVertexSet()) {
+        cache[i->name] = i->data->eval(cache);
+    }
+    // got to update the value twice given the order of the input file is uncertain, some cell need to update again
+    for (const auto& i : cellGraph.getVertexSet()) {
+        cache[i->name] = i->data->eval(cache);
+        notifyObservers(i->name);
+    }
 }
 
 void CS106XCellModel::save(ostream& outfile) const {
     (void)outfile;
-    // TODO: remove the above line and implement this
+    for (const auto& i : cellGraph.getVertexSet()) {
+        outfile << i->name << " " << i->data->getRawText() << endl;
+    }
 }
 
 void CS106XCellModel::setCell(const string& cellname, const string& rawText) {
@@ -161,6 +191,7 @@ bool CS106XCellModel::dfs(const VertexV<Expression*>* start, const VertexV<Expre
     if (!start) {
         return false;
     }
+    // if we need to check whether there is a path from a point back to the point, the starting point should be visited twice, the first after we visit it, we should not mark it as visited
     if (!first) {
         visited.add(start->name);
     }
