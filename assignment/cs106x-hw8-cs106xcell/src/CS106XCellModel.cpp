@@ -3,7 +3,9 @@
 #include "CS106XCellModel.h"
 #include "Expression.h"
 #include "ExpressionParser.h"
+#include "basicgraph.h"
 #include "queue.h"
+#include "set.h"
 #include "strlib.h"
 
 using namespace std;
@@ -52,7 +54,7 @@ void CS106XCellModel::setCell(const string& cellname, const string& rawText) {
     string upper_cell_name = toUpperCase(cellname);
     string upper_value = toUpperCase(rawText);
     Expression* exp = ExpressionParser::parseExpression(rawText);
-    cache[upper_cell_name] = exp->eval(cache);
+    cout << "exp type is " << exp->getType() << endl;
     if (cellGraph.containsVertex(upper_cell_name)) {
         delete cellGraph.getVertex(upper_cell_name)->data;
         cellGraph.getVertex(upper_cell_name)->data = exp;
@@ -66,10 +68,18 @@ void CS106XCellModel::setCell(const string& cellname, const string& rawText) {
         cellGraph.removeEdge(i->name, upper_cell_name);
     }
     cout << "after removal" << cellGraph << endl;
-    setDependency(exp, upper_cell_name);
+    Set<EdgeV<Expression*>*> newEdges;
+    setDependency(exp, upper_cell_name, newEdges);
+    if (containLoop(upper_cell_name)) {
+        for (const auto& i : newEdges) {
+            cellGraph.removeEdge(i);
+        }
+        throw ErrorException("there is circular in the exp");
+    }
     cout << cellGraph << endl;
     // TODO: remove the above line and implement this
     // update values!
+    cache[upper_cell_name] = exp->eval(cache);
     auto topVec = topSort();
     cout << "the top sort" << topVec << endl;
     int cell_index = 0;
@@ -89,26 +99,27 @@ void CS106XCellModel::setCell(const string& cellname, const string& rawText) {
 }
 
 
-void CS106XCellModel::setDependency(const Expression* exp, const string& cell_name) {
+void CS106XCellModel::setDependency(const Expression* exp, const string& cell_name, Set<EdgeV<Expression*>*>& newEdges) {
     switch (exp->getType()) {
         case IDENTIFIER: {
             if (!cellGraph.containsEdge(toUpperCase(exp->toString()), cell_name)) {
                 cellGraph.addEdge(toUpperCase(exp->toString()), cell_name);
+                newEdges.add(cellGraph.getEdge(toUpperCase(exp->toString()), cell_name));
             }
             break;
         }
         case RANGE: {
-            if (!cellGraph.containsEdge(toUpperCase(static_cast<const RangeExp*>(exp)->getRange().getStartCellName()), cell_name)) {
-                cellGraph.addEdge(toUpperCase(static_cast<const RangeExp*>(exp)->getRange().getStartCellName()), cell_name);
-            }
-            if (!cellGraph.containsEdge(toUpperCase(static_cast<const RangeExp*>(exp)->getRange().getEndCellName()), cell_name)) {
-                cellGraph.addEdge(toUpperCase(static_cast<const RangeExp*>(exp)->getRange().getEndCellName()), cell_name);
+            for (const auto& i : static_cast<const RangeExp*>(exp)->getRange().getAllCellNames()) {
+                if (!cellGraph.containsEdge(i, cell_name)) {
+                    cellGraph.addEdge(i, cell_name);
+                    newEdges.add(cellGraph.getEdge(toUpperCase(i), cell_name));
+                }
             }
             break;
         }
         case COMPOUND: {
-            setDependency(static_cast<const CompoundExp*>(exp)->getLeft(), cell_name);
-            setDependency(static_cast<const CompoundExp*>(exp)->getRight(), cell_name);
+            setDependency(static_cast<const CompoundExp*>(exp)->getLeft(), cell_name, newEdges);
+            setDependency(static_cast<const CompoundExp*>(exp)->getRight(), cell_name, newEdges);
             break;
         }
         default:
@@ -138,3 +149,28 @@ Vector<string> CS106XCellModel::topSort() const {
     return vec;
 }
 
+bool CS106XCellModel::containLoop(const string& vertex) const {
+    Set<string> visited;
+    return dfs(cellGraph.getVertex(vertex), cellGraph.getVertex(vertex), visited, true);
+}
+
+bool CS106XCellModel::dfs(const VertexV<Expression*>* start, const VertexV<Expression*>* end, Set<string>& visited, bool first) const {
+    if (start->name == end->name && !first) {
+        return true;
+    }
+    if (!start) {
+        return false;
+    }
+    if (!first) {
+        visited.add(start->name);
+    }
+    for (const auto& i : start->edges) {
+        if (!visited.contains(i->finish->name)) {
+            if (dfs(i->finish, end, visited)) {
+                return true;
+            }
+        }
+    }
+    visited.remove(start->name);
+    return false;
+}

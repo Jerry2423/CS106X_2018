@@ -80,6 +80,8 @@ private:
     BasicGraphV<Expression*> cellGraph;
     Map<string, double> cache;
     // TODO: add any private members here
-    void setDependency(const Expression* exp, const string& cell_name);     
+    void setDependency(const Expression* exp, const string& cell_name, Set<EdgeV<Expression*>*>& newEdges);     
     Vector<string>topSort() const;
+    bool containLoop(const string& vertex) const;
+    bool dfs(const VertexV<Expression*>* start, const VertexV<Expression*>* end, Set<string>& visited, bool first=false) const;
 };
