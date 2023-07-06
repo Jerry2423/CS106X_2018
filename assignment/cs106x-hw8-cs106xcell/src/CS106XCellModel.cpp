@@ -3,6 +3,7 @@
 #include "CS106XCellModel.h"
 #include "Expression.h"
 #include "ExpressionParser.h"
+#include "queue.h"
 #include "strlib.h"
 
 using namespace std;
@@ -68,6 +69,22 @@ void CS106XCellModel::setCell(const string& cellname, const string& rawText) {
     setDependency(exp, upper_cell_name);
     cout << cellGraph << endl;
     // TODO: remove the above line and implement this
+    // update values!
+    auto topVec = topSort();
+    cout << "the top sort" << topVec << endl;
+    int cell_index = 0;
+    for (cell_index = 0; cell_index < topVec.size(); cell_index++) {
+        if (topVec[cell_index] == upper_cell_name) {
+            break;
+        }
+    }
+    for (int i = cell_index+1; i < topVec.size(); i++) {
+        cache[topVec[i]] = cellGraph.getVertex(topVec[i])->data->eval(cache);
+        cout << "cell " << upper_cell_name << "value is " << cellGraph.getVertex(topVec[i])->data->getValue() << endl;
+        notifyObservers(topVec[i]); // call the viewer to update view
+        // update value
+    }
+    cout << "cache " << cache << endl;
     notifyObservers(upper_cell_name);
 }
 
@@ -98,3 +115,26 @@ void CS106XCellModel::setDependency(const Expression* exp, const string& cell_na
             break;
     }
 }
+
+Vector<string> CS106XCellModel::topSort() const {
+    Vector<string> vec;
+    Map<string, int> nodeInbound;
+    Queue<string> zeroInbound;
+    for (const auto& i : cellGraph.getVertexNames()) {
+        nodeInbound[i] = cellGraph.getInverseNeighbors(i).size();
+        if (nodeInbound[i] == 0) {
+            zeroInbound.add(i);
+        }
+    }
+    while (!zeroInbound.isEmpty()) {
+        vec.push_back(zeroInbound.dequeue());
+        for (const auto& i : cellGraph.getNeighborNames(vec.back())) {
+            nodeInbound[i] -= 1;
+            if (nodeInbound[i] == 0) {
+                zeroInbound.add(i);
+            }
+        }
+    }
+    return vec;
+}
+
