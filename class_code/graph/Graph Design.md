@@ -77,6 +77,8 @@ Dijkstra算法里面，*够不着，无穷大的点*没必要放到todo-list里�
 
 - 补充：调用pop的时候可以不检查是否visited：It’s okay to have duplicate elements in the queue. 重复visit已经visit过的点没关系，关键在于**首次visit**的相对顺序没有变：距离起始点长度为1的点的**首次visit**一定在长度为2的点的前面，因为长度为2更远的点一定是在长度为1的点**后面首次**加入queue的（induction）
 
+- **常用技巧：用set记录visited 和 enqueued的点**
+
 [BFS Implementation](https://www.youtube.com/watch?v=xlVX7dXLS64&ab_channel=Reducible)
 
 ![Screen Shot 2023-07-02 at 23.45.04](/Users/bryant/Programming/cs106b/class_code/graph/image/Screen Shot 2023-07-02 at 23.45.04.png)
@@ -101,3 +103,8 @@ if (!(i.second->prev)) { // pointing to the closest neighbor only
 }
 ```
 
+
+
+### Connectivity
+
+参考assignment2， 用`set<chamber> chambers`来记录图里面的connected components；其中`using chameber = set<node>`，`chamber`相当于单个connected component。当2个点联通的时候就把**两个点所在的components**合并即可
