@@ -108,3 +108,28 @@ if (!(i.second->prev)) { // pointing to the closest neighbor only
 ### Connectivity
 
 参考assignment2， 用`set<chamber> chambers`来记录图里面的connected components；其中`using chameber = set<node>`，`chamber`相当于单个connected component。当2个点联通的时候就把**两个点所在的components**合并即可
+
+
+
+### Adjacency List Representation
+
+[Graph Representation part 03 - Adjacency List](https://www.youtube.com/watch?v=k1wraWzqtvQ&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=42&ab_channel=mycodeschool)
+
+```c++
+struct Node {
+    int data;
+    Node* next;
+    int weight;
+    Node(int data, Node* next = nullptr, int weight = 0) : data(data), next(next), weight(weight) {};
+};
+
+Node* graph[size_of_graph];
+```
+
+注意：
+
+- `Node` 表示的是linked list里面的一个节点，包含节点名称和下一个节点，和图本身没关系；其中`b.weight`表示的是从点`a`到其某个相邻节点`b`的距离
+- `graph`数组中，每一个index表示节点的名称，里面存的是index节点的adjacent list链表的head pointer. `graph`也可以一种map来实现：`map<node_name_type, list_head>`
+- 关于visit标记：可以用`map<node_index/name, bool>`来记录
+- 关于prev节点的标记：可以用`map<node_index/name, node_index/name>`记录，key表示节点名称，value是到他前一个节点的名称
+- 关于dijkstra算法priority_queue的维护，里面可以存`pair<node_index/name, int>`第一个元素表节点名称，后一个元素表从起点到该点的`cost`

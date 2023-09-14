@@ -90,7 +90,7 @@ bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
                             int numCities,
                             Set<string>& locations) {
     // [TODO: Delete these lines and implement this function!]
-    (void)(roadNetwork, numCities, locations);
+    // (void)(roadNetwork, numCities, locations);
 
 
     if (allCitiesCovered(roadNetwork, locations)) {
